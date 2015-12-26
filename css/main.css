@@ -1,0 +1,546 @@
+html {
+    height: 100%; 
+}
+
+body {    
+    width: 100%;
+    height: 100%; 
+     background-color: black;
+    z-index: -100 !important;
+}
+
+.content {
+    height: 100%; 
+   ;
+}
+
+.full-screen {
+    width: 100%;
+    min-height: 100%;
+}
+
+#section-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    z-index: 0;
+}
+
+
+
+.navi { 
+  z-index: 1000 !important; 
+  width: 100%;
+  list-style: none;
+  background: black;
+  overflow-y: hidden;
+  overflow-x: hidden; 
+
+ 
+}
+.navi a {
+  font-size: 1.8em;
+  z-index: 100000 !important;
+  
+  color: white;
+  float: left; 
+  width: 16.666666666667%;
+  box-sizing: border-box;
+  font-family: 'Cabin', sans-serif;
+  text-align: center;
+  background: rgba(255, 20, 20, 0);
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+
+}
+.navi a:hover {
+  background: dodgerblue;
+  color: #fff;
+}
+
+.headline {
+    position: relative;
+    z-index: 4; !important; 
+    font-size: 3.4em; 
+    font-family: 'Cabin', sans-serif;
+    text-decoration-color: dodgerblue;
+}
+
+.sub-headline {
+    position: relative;
+    z-index: 4; 
+    
+}
+
+.typed-cursor{
+    font-size: 3.4em; 
+    color: white;
+    opacity: 1;
+    -webkit-animation: blink 1.0s infinite;
+    -moz-animation: blink 1.0s infinite;
+    animation: blink 1.0s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
+/*backup-url: https://www.script-tutorials.com/demos/360/images/stars.png*/
+
+.stars {
+  background:#000 url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/stars_aydndz.png) repeat top center;
+  z-index:0;
+}
+
+/*backup-url: http://www.script-tutorials.com/demos/360/images/twinkling.png */
+
+.twinkling{
+  background:transparent url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/twinkling_yvha6w.png)  repeat top center;
+
+  z-index:0;
+
+  -moz-animation:move-twink-back 200s linear infinite;
+  -ms-animation:move-twink-back 200s linear infinite;
+  -o-animation:move-twink-back 200s linear infinite;
+  -webkit-animation:move-twink-back 200s linear infinite;
+  animation:move-twink-back 200s linear infinite;
+}
+
+.stars, .twinkling {
+  position:absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+}
+
+
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+
+
+
+
+
+#section-2 {
+
+}
+
+#bio {
+    height: 70%;
+
+    
+}
+
+.circular {
+	width: 304px;
+	height: 300px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+
+	}
+
+
+.icons {
+    
+    color: black;
+}
+
+#summary {
+    height: 30%;
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.7em;
+    padding: 20px;
+    
+}
+
+
+
+.center-div {
+    
+    width: 90% !important;
+    margin: 0 auto;
+    
+}
+
+
+
+.footer-copyright {
+    font-size: 1.4em;
+}
+
+/*SKILL BARS*/
+
+ul {
+    list-style-type: none;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+    font-size: 1.0em;
+    font-weight: 500;
+    font-style: bold;
+    line-height: 160%;
+    letter-spacing: 5px;
+    
+    
+    
+}
+
+li {
+     padding-top: 15px !important; 
+}
+
+
+
+#html {
+    background-color: #0194bd;
+    width:  0%;
+    height: 25px;
+    margin-bottom: 10px;
+   
+}
+
+#css {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#javascript {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#c {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#cplusplus {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#java {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#python {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#bootstrap {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#jquery {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#angular {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#nodejs {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#mongodb {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#git {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#jetbrains {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#windows {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#android {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+#linux {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#osx {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#mis {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#it-life-cycle {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#financial-analysis {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+#project-management {
+    background-color: #0194bd;
+    width: 0%;
+    height: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+.skill-text {
+    font-size: 2.2em;
+    font-family: 'Cabin', sans-serif;
+    padding-bottom: 15px;
+    
+}
+
+.colored {
+    font-size: 2em;
+}
+
+.enlarge-icon {
+    
+    font-size: 1.8em;
+    
+}
+
+.skill-header {
+    
+     font-family: 'Cabin', sans-serif;
+   
+}
+
+.default-text {
+    
+     font-family: 'Cabin', sans-serif;
+    z-index: 0; !important;
+   
+}
+
+
+.counter-style {
+    
+    color: white;
+    width: 60px;
+     font-family: 'Cabin', sans-serif;
+    padding-bottom: 10px;
+    
+}
+
+
+#experience-list {
+    z-index: 0;
+    padding-right: 10px;
+}
+
+
+.experience-graphics {
+    
+    
+    height: 200px;
+    
+    
+}
+
+.experience {
+    
+    
+    height: 200px;
+    
+}
+
+
+.experience-subheader {
+    
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    
+}
+
+.experience-image {
+    
+    padding-top: 10px;
+    padding-left: 0px;
+    z-index: -1;
+    
+    
+}
+
+#ccc-image {
+    
+    height: 100px;
+    
+}
+
+
+.slides {
+    
+    height: 800px !important;    
+    
+    
+}
+
+
+
+#interest-slider {
+    
+    z-index: 0;
+    
+}
+
+.interest-img {
+    z-index: -1 !important;
+    
+}
+
+
+#contact-me {
+    
+    height: 450px;
+    
+}
+
+.contact-container {
+    
+    height: 50px;
+    width: 520px;
+     margin: 0 auto;
+    letter-spacing: 1px;
+    
+}
+
+#contact-email:hover {
+  
+  color: dodgerblue;
+}
+
+
+#contact-git:hover {
+  
+  color: dodgerblue;
+}
+
+#contact-linkedin:hover {
+  
+  color: dodgerblue;
+}
+
+#contact-twitter:hover {
+  
+  color: dodgerblue;
+}
+
+.pad-icon {
+    
+    font-size: 2.6em;
+    padding-top: 5px;
+    padding-left: 20px;
+    
+}
+
+.pad-text {
+    
+    padding-top: 10px
+    
+    
+}
+
+.standard-text {
+    
+    font-family: Georgia;
+}
+
+
+
+
+
