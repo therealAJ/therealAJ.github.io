@@ -638,7 +638,7 @@ console.log(top);
     else {
         $("#c").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3500) { $("#cplusplus").animate({width:"40%"}, 2000); 
+    if (top > 1400 && top < 3500) { $("#cplusplus").animate({width:"30%"}, 2000); 
     } else {
         $("#cplusplus").stop(true).animate({width:"0"}, '2000');
     }
