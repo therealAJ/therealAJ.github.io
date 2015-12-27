@@ -33,7 +33,7 @@ $(function() {
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
-        }, 600); // The number here represents the speed of the scroll in milliseconds
+        }, 1200); // The number here represents the speed of the scroll in milliseconds
         return false;
       }
     }
