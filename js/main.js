@@ -170,7 +170,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 85 ,                // count to this number, default: 0
+  countTo: 75 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -190,7 +190,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 85 ,                // count to this number, default: 0
+  countTo: 75 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -211,7 +211,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 60 ,                // count to this number, default: 0
+  countTo: 50 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -232,7 +232,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 30 ,                // count to this number, default: 0
+  countTo: 20 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -252,7 +252,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 50 ,                // count to this number, default: 0
+  countTo: 30 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -272,7 +272,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 80 ,                // count to this number, default: 0
+  countTo: 60 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -292,7 +292,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 40 ,                // count to this number, default: 0
+  countTo: 30 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -312,7 +312,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 70 ,                // count to this number, default: 0
+  countTo: 60 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -332,7 +332,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 60 ,                // count to this number, default: 0
+  countTo: 50 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -372,7 +372,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 50 ,                // count to this number, default: 0
+  countTo: 40 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -392,7 +392,7 @@ $(window).scroll(function() {
   autoStart: false,           // true/false, default: true
   duration: 2000,             // milliseconds, default: 1500
   countFrom: 0,
-  countTo: 40 ,                // count to this number, default: 0
+  countTo: 25 ,                // count to this number, default: 0
   runOnce: true,              // only run the counter once, default: false
   placeholder: 0 +"%",           // replace the number with this before counting,
                               // most useful with autoStart: false. default: undefined
@@ -624,41 +624,41 @@ var top = $(document).scrollTop();
 console.log(top);
     
     if (top > 1400 && top < 3500 ) {
-        $("#html, #css").animate({width:"85%"}, 2000);
+        $("#html, #css").animate({width:"75%"}, 2000);
     } else {
         $("#html, #css").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 1400 && top < 3500) { $("#javascript").animate({width:"60%"}, 2000);
+    if (top > 1400 && top < 3500) { $("#javascript").animate({width:"50%"}, 2000);
     } else {
         $("#javascript").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3750) {$("#c").animate({width:"30%"}, 2000);
+    if (top > 1400 && top < 3750) {$("#c").animate({width:"20%"}, 2000);
     }
     else {
         $("#c").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3500) { $("#cplusplus").animate({width:"50%"}, 2000); 
+    if (top > 1400 && top < 3500) { $("#cplusplus").animate({width:"40%"}, 2000); 
     } else {
         $("#cplusplus").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 1400 && top < 3750) { $("#java").animate({width:"80%"}, 2000); }
+    if (top > 1400 && top < 3750) { $("#java").animate({width:"60%"}, 2000); }
     else {
         $("#java").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3850) { $("#python").animate({width:"40%"}, 2000); }
+     if (top > 1400 && top < 3850) { $("#python").animate({width:"30%"}, 2000); }
     else {
         $("#python").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3500) { $("#bootstrap").animate({width:"70%"}, 2000); }
+     if (top > 1400 && top < 3500) { $("#bootstrap").animate({width:"60%"}, 2000); }
     else {
         $("#bootstrap").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3500) { $("#jquery").animate({width:"60%"}, 2000); }
+     if (top > 1400 && top < 3500) { $("#jquery").animate({width:"50%"}, 2000); }
     else {
         $("#jquery").stop(true).animate({width:"0"}, '2000');
     }
@@ -668,12 +668,12 @@ console.log(top);
         $("#angular").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3500) { $("#nodejs").animate({width:"50%"}, 2000); }
+     if (top > 1400 && top < 3500) { $("#nodejs").animate({width:"40%"}, 2000); }
     else {
         $("#nodejs").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3500) { $("#mongodb").animate({width:"40%"}, 2000); }
+     if (top > 1400 && top < 3500) { $("#mongodb").animate({width:"25%"}, 2000); }
     else {
         $("#mongodb").stop(true).animate({width:"0"}, '2000');
     }
