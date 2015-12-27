@@ -170,12 +170,12 @@ body {
 }
 
 .circular {
-	width: 304px;
-	height: 300px;
-	border-radius: 150px;
-	-webkit-border-radius: 150px;
-	-moz-border-radius: 150px;
-
+	
+	background-repeat: no-repeat;
+    background-position: 50;
+    border-radius: 20%;
+    width: 400px;
+    height: 200px;
 	}
 
 

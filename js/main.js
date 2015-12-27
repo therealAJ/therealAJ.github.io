@@ -633,12 +633,12 @@ console.log(top);
     } else {
         $("#javascript").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3750) {$("#c").animate({width:"20%"}, 2000);
+    if (top > 1400 && top < 3850) {$("#c").animate({width:"20%"}, 2000);
     }
     else {
         $("#c").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3500) { $("#cplusplus").animate({width:"30%"}, 2000); 
+    if (top > 1400 && top < 3800) { $("#cplusplus").animate({width:"30%"}, 2000); 
     } else {
         $("#cplusplus").stop(true).animate({width:"0"}, '2000');
     }
@@ -648,7 +648,7 @@ console.log(top);
         $("#java").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3850) { $("#python").animate({width:"30%"}, 2000); }
+     if (top > 1400 && top < 4150) { $("#python").animate({width:"30%"}, 2000); }
     else {
         $("#python").stop(true).animate({width:"0"}, '2000');
     }
@@ -668,22 +668,22 @@ console.log(top);
         $("#angular").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3500) { $("#nodejs").animate({width:"40%"}, 2000); }
+     if (top > 1400 && top < 3750) { $("#nodejs").animate({width:"40%"}, 2000); }
     else {
         $("#nodejs").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3500) { $("#mongodb").animate({width:"25%"}, 2000); }
+     if (top > 1400 && top < 3800) { $("#mongodb").animate({width:"25%"}, 2000); }
     else {
         $("#mongodb").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3750) { $("#git").animate({width:"70%"}, 2000); }
+     if (top > 1400 && top < 3850) { $("#git").animate({width:"70%"}, 2000); }
     else {
         $("#git").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3850) { $("#jetbrains").animate({width:"50%"}, 2000); }
+     if (top > 1400 && top < 4150) { $("#jetbrains").animate({width:"50%"}, 2000); }
     else {
         $("#jetbrains").stop(true).animate({width:"0"}, '2000');
     }
