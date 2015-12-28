@@ -633,12 +633,12 @@ console.log(top);
     } else {
         $("#javascript").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3850) {$("#c").animate({width:"20%"}, 2000);
+    if (top > 1400 && top < 4050) {$("#c").animate({width:"20%"}, 2000);
     }
     else {
         $("#c").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1400 && top < 3800) { $("#cplusplus").animate({width:"30%"}, 2000); 
+    if (top > 1400 && top < 3900) { $("#cplusplus").animate({width:"30%"}, 2000); 
     } else {
         $("#cplusplus").stop(true).animate({width:"0"}, '2000');
     }
@@ -673,12 +673,12 @@ console.log(top);
         $("#nodejs").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3800) { $("#mongodb").animate({width:"25%"}, 2000); }
+     if (top > 1400 && top < 3900) { $("#mongodb").animate({width:"25%"}, 2000); }
     else {
         $("#mongodb").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 3850) { $("#git").animate({width:"70%"}, 2000); }
+     if (top > 1400 && top < 4050) { $("#git").animate({width:"70%"}, 2000); }
     else {
         $("#git").stop(true).animate({width:"0"}, '2000');
     }
@@ -688,7 +688,7 @@ console.log(top);
         $("#jetbrains").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 3000 && top < 4800) { $("#windows").animate({width:"90%"}, 2000); }
+     if (top > 3200 && top < 4800) { $("#windows").animate({width:"90%"}, 2000); }
     else {
         $("#windows").stop(true).animate({width:"0"}, '2000');
     }
@@ -696,16 +696,16 @@ console.log(top);
     else {
         $("#android").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 3400 && top < 4800) { $("#linux").animate({width:"50%"}, 2000); }
+    if (top > 3800 && top < 5400) { $("#linux").animate({width:"50%"}, 2000); }
     else {
         $("#linux").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 3600 && top < 4800 ) { $("#osx").animate({width:"40%"}, 2000); }
+    if (top > 3800 && top < 5500 ) { $("#osx").animate({width:"40%"}, 2000); }
     else {
         $("#osx").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 3000 && top < 4800) { $("#mis").animate({width:"50%"}, 2000); }
+    if (top > 3200 && top < 4800) { $("#mis").animate({width:"50%"}, 2000); }
     else {
         $("#mis").stop(true).animate({width:"0"}, '2000');
     }
@@ -715,12 +715,12 @@ console.log(top);
         $("#it-life-cycle").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 3400 && top < 4800 ) { $("#financial-analysis").animate({width:"30%"}, 2000); }
+    if (top > 3800 && top < 5400 ) { $("#financial-analysis").animate({width:"30%"}, 2000); }
     else {
         $("#financial-analysis").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 3600 && top < 4800 ) { $("#project-management").animate({width:"40%"}, 2000); }
+    if (top > 3800 && top < 5500 ) { $("#project-management").animate({width:"40%"}, 2000); }
     else {
         $("#project-management").stop(true).animate({width:"0"}, '2000');
     }
