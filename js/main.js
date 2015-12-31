@@ -71,7 +71,7 @@ $(document).ready(function(){
 $(window).scroll(function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = 2000;             
-	// set to whatever you want it to be
+	
 
     if(y_scroll_pos > scroll_pos_test) {
         
@@ -105,7 +105,7 @@ $(window).scroll(function() {
 $(window).scroll(function() {
     var y_scroll_pos = window.pageYOffset;
     var scroll_pos_test = 3200;             
-	// set to whatever you want it to be
+	
 
     if(y_scroll_pos > scroll_pos_test) {
         
@@ -623,67 +623,67 @@ $(document).scroll(function() {
 var top = $(document).scrollTop();
 console.log(top);
     
-    if (top > 1500 && top < 3500 ) {
+    if (top > 1850 && top < 3500 ) {
         $("#html, #css").animate({width:"75%"}, 2000);
     } else {
         $("#html, #css").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 1500 && top < 3500) { $("#javascript").animate({width:"50%"}, 2000);
+    if (top > 1850 && top < 3500) { $("#javascript").animate({width:"50%"}, 2000);
     } else {
         $("#javascript").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1500 && top < 4050) {$("#c").animate({width:"20%"}, 2000);
+    if (top > 1850 && top < 4050) {$("#c").animate({width:"20%"}, 2000);
     }
     else {
         $("#c").stop(true).animate({width:"0"}, '2000');
     }
-    if (top > 1500 && top < 3900) { $("#cplusplus").animate({width:"30%"}, 2000); 
+    if (top > 1850 && top < 3900) { $("#cplusplus").animate({width:"30%"}, 2000); 
     } else {
         $("#cplusplus").stop(true).animate({width:"0"}, '2000');
     }
     
-    if (top > 1500 && top < 3750) { $("#java").animate({width:"60%"}, 2000); }
+    if (top > 1850 && top < 3750) { $("#java").animate({width:"60%"}, 2000); }
     else {
         $("#java").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 4150) { $("#python").animate({width:"30%"}, 2000); }
+     if (top > 1850 && top < 4150) { $("#python").animate({width:"30%"}, 2000); }
     else {
         $("#python").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 3500) { $("#bootstrap").animate({width:"60%"}, 2000); }
+     if (top > 1850 && top < 3500) { $("#bootstrap").animate({width:"60%"}, 2000); }
     else {
         $("#bootstrap").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 3500) { $("#jquery").animate({width:"50%"}, 2000); }
+     if (top > 1850 && top < 3500) { $("#jquery").animate({width:"50%"}, 2000); }
     else {
         $("#jquery").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 3500) { $("#angular").animate({width:"45%"}, 2000); }
+     if (top > 1850 && top < 3500) { $("#angular").animate({width:"45%"}, 2000); }
     else {
         $("#angular").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 3750) { $("#nodejs").animate({width:"40%"}, 2000); }
+     if (top > 1850 && top < 3750) { $("#nodejs").animate({width:"40%"}, 2000); }
     else {
         $("#nodejs").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 3900) { $("#mongodb").animate({width:"25%"}, 2000); }
+     if (top > 1850 && top < 3900) { $("#mongodb").animate({width:"25%"}, 2000); }
     else {
         $("#mongodb").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1500 && top < 4050) { $("#git").animate({width:"70%"}, 2000); }
+     if (top > 1850 && top < 4050) { $("#git").animate({width:"70%"}, 2000); }
     else {
         $("#git").stop(true).animate({width:"0"}, '2000');
     }
     
-     if (top > 1400 && top < 4150) { $("#jetbrains").animate({width:"50%"}, 2000); }
+     if (top > 1850 && top < 4150) { $("#jetbrains").animate({width:"50%"}, 2000); }
     else {
         $("#jetbrains").stop(true).animate({width:"0"}, '2000');
     }
