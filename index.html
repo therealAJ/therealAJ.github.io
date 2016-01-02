@@ -7,6 +7,8 @@
 
     <!--Import materialize.css-->
     <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <!--Import Animate.css-->
+    <link rel="stylesheet" href="css/animate.css">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <!-- Import Font-Awesome-->
@@ -56,6 +58,37 @@
     <script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
     <script type="text/javascript" src="js/counter.js"></script>
     <script type="text/javascript" src="js/counter.min.js"></script>
+    
+    <!--WOW.js-->
+    <script src="js/wow.min.js"></script>
+    <script>
+    
+         wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       300,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+        
+         wow1 = new WOW(
+                      {
+                      boxClass:     'wow1',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+         
+                    wow.init();
+                    wow1.init();
+                    
+        
+    </script>
 
 
 
@@ -139,12 +172,12 @@
                         <br>
 
                         <div class="center">
-                            <img class="responsive-img circular" src="img/me1.png" alt="" />
+                            <img class="responsive-img circular wow fadeIn" src="img/me1.png" alt="" />
 
                             <br>
                             <br>
 
-                            <div id='icons' class="center">
+                            <div id='icons' class="center wow fadeInRight" data-wow-duration="2s">
 
                                 <a class='icons' href="mailto:alex.jordache@alumini.ubc.ca"><i class="fa fa-envelope fa-4x">&nbsp&nbsp</i></a>
                                 <a class='icons' href="https://ca.linkedin.com/in/ajordache"><i class="fa fa-linkedin fa-4x"> &nbsp</i></a>
@@ -199,7 +232,7 @@
 
                     <div class="col s6 m6 l6">
 
-                        <h4 class="skill-header white-text center"> Languages </h4>
+                        <h4 class="skill-header white-text center wow1 fadeIn"> Languages </h4>
                         <br>
 
                         <div class="container">
@@ -246,7 +279,7 @@
 
                     <!-- FRAMEWORKS / TOOLS-->
                     <div class="col s6 m6 l6">
-                        <h4 class="skill-header white-text center"> Frameworks/Tools </h4>
+                        <h4 class="skill-header white-text center wow1 fadeIn"> Frameworks/Tools </h4>
                         <br>
                         <div class="container">
 
@@ -299,7 +332,7 @@
                     <!--OS's-->
                     <div class="col s6 m6 l6">
                         <br>
-                        <h4 class="skill-header white-text center "> Operating Systems </h4>
+                        <h4 class="skill-header white-text center wow1 fadeIn "> Operating Systems </h4>
                         <br>
                         <div class="container">
 
@@ -332,7 +365,7 @@
                     <div class="col s6 m6 l6">
                         <!--BUSINESS SKILLS-->
                         <br>
-                        <h4 class="skill-header white-text center"> Business & Technical Proficiencies </h4>
+                        <h4 class="skill-header white-text center wow1 fadeIn"> Business & Technical Proficiencies </h4>
                         <br>
                         <div class="container">
 
@@ -381,7 +414,7 @@
                 <br>
                 <br>
                 
-                <h4 class="skill-header white-text center "> Projects </h4>
+                <h4 class="skill-header white-text center wow1 fadeIn "> Projects </h4>
 
                 <br>
                 <br>
@@ -394,7 +427,7 @@
                 <!--Project #1: SportsHack-->
 
 
-                <div class="">
+                <div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
 
                     <h5 class="skill-header white-text center btn light-blue darken-2 " style="text-transform: none"> myCFL  
                     </h5>
@@ -450,7 +483,7 @@
 
                 <!--Project #2: Mind the Gap-->
 
-                <div class="">
+                <div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
 
                     <h5 class="skill-header white-text center btn light-blue darken-2 " style="text-transform: none"> Mind the Gap   
                     </h5>
@@ -507,7 +540,7 @@
                 <!--Project #3: My Website-->
 
 
-                <div class="">
+                <div class="wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.5s">
 
                     <h5 class="skill-header white-text center btn light-blue darken-2 " style="text-transform: none"> ePortfolio   
                     </h5>
@@ -593,7 +626,7 @@
                         <br>
                         <!--Experience Position 1-->
 
-                        <li>
+                        <li class="wow1 fadeInLeft">
                             <div class="row">
 
                                 <div class="col s2 m2 l2 center">
@@ -619,7 +652,7 @@
 
                         <!--Experience Position 2-->
 
-                        <li>
+                        <li class="wow1 fadeInLeft">
 
                             <div class="row">
 
@@ -656,7 +689,7 @@
 
                         <!--Experience Position 3-->
 
-                        <li>
+                        <li class="wow1 fadeInLeft">
 
 
                             <div class="row">
@@ -689,7 +722,7 @@
                         <!--Experience Position 4-->
 
 
-                        <li>
+                        <li class="wow1 fadeInLeft">
 
                             <div class="row">
 
@@ -720,7 +753,7 @@
 
                         <!--Experience Position #5-->
 
-                        <li>
+                        <li class="wow1 fadeInLeft">
 
 
                             <div class="row">
@@ -872,11 +905,11 @@
             <br>
         
 
-            <h4 class="center default-text  white-text"> Let's get in touch!</h4>
+            <h4 class="center default-text  white-text wow1 fadeIn"> Let's get in touch!</h4>
 
             <br>
 
-            <div id="contact-me " class="container  light-blue lighten-5 z-depth-5">
+            <div id="contact-me " class="container light-blue lighten-5 z-depth-5 wow1 fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
 
 
                 <div class="row">
