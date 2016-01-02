@@ -184,6 +184,10 @@ body {
     color: black;
 }
 
+.icons:hover {
+    color: dodgerblue;
+}
+
 #summary {
     height: 30%;
     font-family: 'Cabin', sans-serif;
