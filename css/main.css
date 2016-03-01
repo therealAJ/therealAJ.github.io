@@ -518,10 +518,22 @@ li {
 
 #card-4:hover {
     
+    background-color: #00897b ;
+    transform: scale(1.05);
+    
+}
+
+#card-5:hover {
+    
     background-color: #5c6bc0 ;
     transform: scale(1.05);
     
 }
+
+.card-img {
+    padding-top: 10px;
+}
+
 
 
 
