@@ -1,7 +1,7 @@
 # Personal Portfolio 
 
 
-####Designed and built an e-portfolio to showcase my skills, projects I've worked on, work & volunteer experience, and ####interests. 
+####Designed and built an e-portfolio to showcase my skills, projects I've worked on, work & volunteer experience, and interests. 
 
 ## Technologies Used 
 HTML, CSS, JavaScript, jQuery, Material Design, Adobe Photoshop
