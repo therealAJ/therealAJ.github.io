@@ -1,5 +1,6 @@
 # Personal Portfolio 
 
+![alt tag] (http://res.cloudinary.com/dz9yrk0yr/image/upload/v1457091329/my_website_a9j9sn.png)
 
 #####Designed and built an e-portfolio to showcase my skills, projects I've worked on, work & volunteer experience, and interests. 
 
