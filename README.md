@@ -2,6 +2,8 @@
 
 ![alt tag] (http://res.cloudinary.com/dz9yrk0yr/image/upload/v1457091329/my_website_a9j9sn.png)
 
+[![GitHub license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
+
 #####Designed and built an e-portfolio to showcase my skills, projects I've worked on, work & volunteer experience, and interests. 
 
 ## Technologies Used 
