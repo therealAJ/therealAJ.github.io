@@ -503,6 +503,11 @@ li {
 }
 
 #card-5:hover {
+    background-color: #684a52;
+    transform: scale(1.05);
+}
+
+#card-6:hover {
     background-color: #5c6bc0;
     transform: scale(1.05);
 }
