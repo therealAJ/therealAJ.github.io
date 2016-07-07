@@ -302,7 +302,7 @@
          autoStart: false, // true/false, default: true
          duration: 2000, // milliseconds, default: 1500
          countFrom: 0,
-         countTo: 30, // count to this number, default: 0
+         countTo: 50, // count to this number, default: 0
          runOnce: true, // only run the counter once, default: false
          placeholder: 0 + "%", // replace the number with this before counting,
          // most useful with autoStart: false. default: undefined
@@ -500,7 +500,7 @@
          autoStart: false, // true/false, default: true
          duration: 2000, // milliseconds, default: 1500
          countFrom: 0,
-         countTo: 50, // count to this number, default: 0
+         countTo: 60, // count to this number, default: 0
          runOnce: true, // only run the counter once, default: false
          placeholder: 0 + "%", // replace the number with this before counting,
          // most useful with autoStart: false. default: undefined
@@ -522,7 +522,7 @@
          autoStart: false, // true/false, default: true
          duration: 2000, // milliseconds, default: 1500
          countFrom: 0,
-         countTo: 50, // count to this number, default: 0
+         countTo: 60, // count to this number, default: 0
          runOnce: true, // only run the counter once, default: false
          placeholder: 0 + "%", // replace the number with this before counting,
          // most useful with autoStart: false. default: undefined
@@ -544,7 +544,7 @@
          autoStart: false, // true/false, default: true
          duration: 2000, // milliseconds, default: 1500
          countFrom: 0,
-         countTo: 40, // count to this number, default: 0
+         countTo: 60, // count to this number, default: 0
          runOnce: true, // only run the counter once, default: false
          placeholder: 0 + "%", // replace the number with this before counting,
          // most useful with autoStart: false. default: undefined
@@ -714,7 +714,7 @@
 
          if (top > 1850 && top < 4150) {
              $("#python").animate({
-                 width: "30%"
+                 width: "50%"
              }, 2000);
          } else {
              $("#python").stop(true).animate({
@@ -803,7 +803,7 @@
          }
          if (top > 3200 && top < 4800) {
              $("#android").animate({
-                 width: "50%"
+                 width: "60%"
              }, 2000);
          } else {
              $("#android").stop(true).animate({
@@ -812,7 +812,7 @@
          }
          if (top > 3800 && top < 5400) {
              $("#linux").animate({
-                 width: "50%"
+                 width: "60%"
              }, 2000);
          } else {
              $("#linux").stop(true).animate({
@@ -821,7 +821,7 @@
          }
          if (top > 3800 && top < 5500) {
              $("#osx").animate({
-                 width: "40%"
+                 width: "60%"
              }, 2000);
          } else {
              $("#osx").stop(true).animate({
