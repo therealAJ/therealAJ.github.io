@@ -1,864 +1,572 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Alex Jordache</title>
-
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
-    <!--Import Animate.css-->
-    <link rel="stylesheet" href="css/animate.css">
     <!--Import Google Icon Font-->
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <!-- Import Font-Awesome-->
-    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" />
-    <!--Main CSS-->
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-    <!--Import Devicon-->
-    <link type="text/css" rel="stylesheet" href="css/devicon.min.css">
-    <link type="text/css" rel="stylesheet" href="css/devicon.css">
-    <link rel="stylesheet" href="css/devicon-colors.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="./css/main.css" media="screen,projection" />
 
 
-    <!-- IMPORT ASSORTED GOOGLE FONTS-->
-    <link href='https://fonts.googleapis.com/css?family=Cutive' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <!--GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asul" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
 
-    <link rel="icon" type="image/png" href="img/jobiqo_icon.png" />
-
-    <!--Let browser know website is optimized for mobile-->
     <!--<meta name="viewport" content="width=device-width, initial-scale=1.0" />-->
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+    <script type=text/javascript src="./js/main.js"></script>
+    <script src="https://use.fontawesome.com/9753d667e7.js"></script>
+
+
 </head>
 
 <body>
-    <!--Import jQuery before materialize.js-->
 
-    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
 
-    <!--Typed.js-->
-    <script src="js/typed.js" type="text/javascript"></script>
+    <div id='content' class="row">
+        <div id="side-nav-container" class="col s2 m2 l2">
+            <ul id="side-nav" class="center co0l s2 m2 l2 white-text">
+                <li id="home-tab" class="bold" onclick="onHomeClick()"><a id="home-toggle" class="nav-bar-text black-text">Home</a></li>
+                <li id="about-tab" class="bold" onclick="onAboutClick()"><a id="about-toggle" class="nav-bar-text black-text">About Me</a></li>
+                <li id="experience-tab" class="bold" onclick="onExperienceClick()"><a id="experience-toggle" class="nav-bar-text black-text">Experience</a></li>
+                <li id="projects-tab" class="bold" onclick="onProjectsClick()"><a id="projects-toggle" class="nav-bar-text black-text">Projects</a></li>
+                <li id="skills-tab" class="bold" onclick="onSkillsClick()"><a id="skills-toggle" class="nav-bar-text black-text">Skills</a></li>
+                <li id="interests-tab" class="bold" onclick="onInterestsClick()"><a id="interests-toggle" class="nav-bar-text black-text">Interests</a></li>
+                <li id="contact-tab" class="bold" onclick="onContactClick()"><a id="contact-toggle" class="nav-bar-text black-text">Contact</a></li>
+            </ul>
 
-    <!-- jQuery Easing / counter.js -->
-    <script type="text/javascript" src="js/jquery.easing.compatibility.js"></script>
-    <script type="text/javascript" src="js/counter.js"></script>
-    <script type="text/javascript" src="js/counter.min.js"></script>
+            <div id="footer" class="white-text center">
+                Copyright &#9400; 2016 Alex Jordache
+                <br>
+                <a class="white-text" href="https://vancouver.ca">Made with <i class="pulse2 red-text fa fa-heart"></i> in Vancouver  </a>
+            </div>
 
-    <!--WOW.js-->
-    <script src="js/wow.min.js"></script>
-    <script>
-        wow = new WOW({
-            boxClass: 'wow', // default
-            animateClass: 'animated', // default
-            offset: 300, // default
-            mobile: true, // default
-            live: true // default
-        })
-        wow.init();
 
-        wow1 = new WOW({
-            boxClass: 'wow1', // default
-            animateClass: 'animated', // default
-            offset: 0, // default
-            mobile: true, // default
-            live: true // default
-        })
+        </div>
 
-        wow.init();
-        wow1.init();
-    </script>
+        <div id="landing-page" class="col s10 m10 l10 center">
 
-    <div class="content s12">
-
-        <!--LANDING PAGE/SECTION 1-->
-
-        <div id="section-1" class="scrollspy s12">
             <div class="stars"></div>
             <div class="twinkling"></div>
-            <!--Navbar-->
-            <div class="navbar-fixed" style="z-index=1000">
-                <nav class="navi">
-                    <a class="smoothScroll" href="#section-1"> Hello</a>
-                    <a class="smoothScroll" href="#section-2"> Me</a>
-                    <a class="smoothScroll" href="#section-3"> Skills & Projects</a>
-                    <a class="smoothScroll" href="#section-4"> Experience</a>
-                    <a class="smoothScroll" href="#section-5"> Interests</a>
-                    <a class="smoothScroll" href="#contact-scroll"> Contact </a>
-                </nav>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
 
-            <!--Headlines-->
-            <div class="center">
-                <span class="headline white-text"></span>
+            <div id="headline" class="white-text">
+                <a id="name-headline" class="white-text">Alex Jordache</a>
+                <br>
+                <a id="sub-headline" class="white-text"> Tech aficionado. Creative coder. Stargazer. </a>
+                <br>
+                <a class="white-text landing-page-icon" href="https://www.github.com/therealAJ"><i class="fa fa-github" aria-hidden="true">&nbsp</i></a>
+                <a href="https://www.linkedin.com/in/ajordache" class="white-text landing-page-icon"><i class="fa fa-linkedin" aria-hidden="true">&nbsp</i> </a>
+                <a href="https://plus.google.com/115318613127439897355" class="white-text landing-page-icon">
+                    <i class="fa fa-google-plus" aria-hidden="true">&nbsp</i> </a>
+                <a class="white-text landing-page-icon">
+                    <i class="fa fa-envelope">&nbsp</i> </a>
+                <a href="https://twitter.com/alex_jordache" class="white-text landing-page-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
             </div>
 
-            <script>
-                $(function () {
-                    $(".headline").typed({
-                        strings: ['^2500 Greetings! ^1000 I\'m Alex Jordache. <br> ^1000 Tech evangelist. ^500 Creative coder. ^500  Stargazer. ^500 :) '],
-                        typeSpeed: 30,
-                    });
-                });
-            </script>
-        </div>
+            <!--SECTION 1 - ABOUT ME -->
+
+            <div id="about-me-container">
+                <div id="about-me" class="container row z-depth-3">
+                    <div id="summary-pic-container" class="col s6 m6 l6">
+                        <img id="summary-pic" src="img/headshot.jpg" class="responsive-img">
+                    </div>
+                    <div id="summary" class="white-text col s6 m6 l6">
+                        Hi, I'm Alex. I'm a third year student at the University of British Columbia majoring in both Business and Computer Science (BUCS). The BUCS program has allowed me to immerse myself in both the technology and commerce worlds, forming a perfect blend of the areas I am passionate about.
+                        <br/>
+                        <br/> I am fueled by big ideas, motivated action, and both exceptional problem-solving and communication skills developed through extensive extra-curricular and academic experiences. I believe in finding the areas in your life where you excel and improving the world by contributing in those fields. Personally, I am determined to bridge the gap between Business and Technology, using my zest for computer science to complement my entrepreneurial savvy.
+
+                        <br/>
+                        <br/> Aside from academia and coding, I define myself as an athlete. Over the past 5 years, basketball has become a part of the individual I am today. Although my journey started with a summer camp, it led to me falling in love with the game and eventually to being a part of the U17 Basketball BC Provinicial Team, being named a Top 15 Senior in the province, winning the same award Steve Nash did almost 20 years ago, back-to-back Island Championships and numerous other unforgettable experiences. In the future, I plan to coach and give back to the game, and provide others with the same joy I felt when I played. You can watch my highlight video <a href="https://www.youtube.com/watch?v=iuw4lz1bxl4&feature=youtu.be"> here </a>
+                    </div>
+                </div>
+
+            </div>
 
 
-        <!--ABOUT ME/SECTION 2-->
+            <!--SECTION 2 - EXPERIENCE -->
 
-        <div id="section-2" class="light-blue darken-2 ">
-            <br>
-            <br>
-            <div class="row">
-                <div id='about-me' class=" container light-blue lighten-5 z-depth-5 scrollspy">
-                    <div id='bio' class="scrollspy">
-                        <br>
-                        <br>
-                        <div class="center">
-                            <img class="responsive-img circular wow fadeIn" src="img/me1-min.png" alt="" />
-                            <br>
-                            <br>
-                            <div id='icons' class="center wow1 fadeInRight" data-wow-duration="1.4s" data-wow-delay="0.3s">
-                                <a class='icons' href="mailto:alex.jordache@alumini.ubc.ca"><i class="fa fa-envelope fa-4x">&nbsp&nbsp</i></a>
-                                <a class='icons' href="https://ca.linkedin.com/in/ajordache"><i class="fa fa-linkedin fa-4x"> &nbsp</i></a>
-                                <a class='icons' href="https://github.com/therealAJ"><i class="fa fa-github fa-4x">&nbsp&nbsp</i> </a>
-                                <a class='icons' href="https://twitter.com/alexjordache3"><i class="fa fa-twitter fa-4x">&nbsp&nbsp</i></a>
-                                <a class='icons' href="https://plus.google.com/115318613127439897355"><i class="fa fa-google-plus fa-4x"></i></a>
+
+            <div id="experience-container">
+                <div id="experience" class="container z-depth-3 row">
+                    <div id="work-column" class="col s12 m12 l12">
+                        <div id="" class="row experience-block">
+                            <div class="col s4 m4 l4 experience-img">
+                                <div class="job-tile">
+                                    <img class="job-image" src="img/vc.png">
+                                </div>
+                            </div>
+                            <div class="col s8 m8 l8 experience-text">
+                                <h5 class="job-title white-text">Vision Critical - <a class="job-position"> Software Engineer Intern </a> </h5>
+                                <h6 class="job-sub-title white-text">Starting September 2016 | Vancouver, British Columbia </h6>
+                                <p class="job-description white-text">
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="row experience-block">
+                            <div class="col s4 m4 l4">
+                                <div id="ubc-tile">
+                                    <img id="ubc-pic" src="img/ubc-svg1.png">
+                                </div>
+                            </div>
+                            <div class="col s8 m8 l8 experience-text">
+                                <h5 class="job-title white-text">University of British Columbia - <a class="job-position"> Undergraduate IT Research Assistant </a> </h5>
+                                <h6 class="job-sub-title white-text">September 2016 - Present | Vancouver, British Columbia </h6>
+                                <p class="job-description white-text">
+                                    Working in a team with 2 Senior IT Support Managers, my main responsibilities entail assisting both department staff and graduate students with technical issues that arise and providing technical support throughout the department. By delivering technical support to the Department of Psychology at UBC, we work to advance various studies in the field; allowing for cutting-edge research.
+                                </p>
+                            </div>
+                        </div>
+                        <div id="last-job" class="row experience-block">
+                            <div class="col s4 m4 l4">
+                                <div id="ubc-tile">
+                                    <img id="ubc-pic" src="img/ubc-svg1.png">
+                                </div>
+                            </div>
+                            <div class="col s8 m8 l8 experience-text">
+                                <h5 class="job-title white-text"> University of British Columbia -  <a class="job-position" class="black-text"> IT Helpdesk Support Assistant </a> </h5>
+                                <h6 class="job-sub-title white-text">April 2015 - September 2016 | Vancouver, British Columbia </h6>
+                                <p class="job-description white-text">
+                                    Main responsibilities include:
+                                </p>
+                                <ul class="job-description white-text">
+                                    <li>&#8226; Helping staff solving a problem with their software </li>
+                                    <li> &#8226; Troubleshooting printers</li>
+                                    <li> &#8226; Unboxing new equipment </li>
+                                    <li> &#8226;Assisting with the installation of AV and IT equipment </li>
+                                    <li> &#8226;Setting up new PC workstations </li>
+                                    <li> &#8226;Installing/updating software and operating systems </li>
+                                    <li> &#8226; Troubleshooting network connectivity errors </li>
+                                    <li> &#8226; Configuring mobile phones to work with the departmental email system </li>
+                                    <li> &#8226; Assisting with departmental operational projects </li>
+                                </ul>
+
                             </div>
                         </div>
                     </div>
-                    <div id='summary' class="flow-text">
-                        <p> Hi, it's Alex here. I'm a second year student at the University of British Columbia majoring in both Business and Computer Science (BUCS). The BUCS program has allowed me to immerse myself in both the technology and commerce worlds, forming a perfect blend of the areas I am passionate about.
-                            <br/>
-                            <br/> I am fueled by big ideas, motivated action, and both exceptional problem-solving and communication skills developed through extensive extra-curricular and academic experiences. I believe in finding the areas in your life where you excel and improving the world by contributing in those fields. Personally, I am determined to bridge the gap between Business and Technology, using my zest for computer science to complement my entrepreneurial savvy.
-                            <br/>
-                            <br/> Aside from academia and coding, I define myself as an athlete. Over the past 5 years, basketball has become a part of the individual I am today. Although my journey started with a summer camp, it led to me falling in love with the game and eventually to being a part of the U17 Basketball BC Provinicial Team, being named a Top 15 Senior in the province, winning the same award Steve Nash did almost 20 years ago, back-to-back Island Championships and numerous other unforgettable experiences. In the future, I hope to coach and give back to the game, and provide others with the same joy I felt when I played. You can watch my highlight video <a href="https://www.youtube.com/watch?v=iuw4lz1bxl4&feature=youtu.be"> here </a> </p>
-                    </div>
-                </div>
-                <br>
-                <br>
-            </div>
-            <br>
-        </div>
 
-        <!--SKILLS & PROJECTS / SECTION 3 -->
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="section-3" class='black scrollspy s12'>
-            <br>
-            <br>
-            <div class="black center-div">
-                <br>
-                <div class="row">
-                    <!--LANGUAGES-->
-                    <div class="col s6 m6 l6">
-                        <h4 class="skill-header white-text center wow1 fadeIn"> Languages </h4>
-                        <br>
-                        <div class="container">
-                            <ul>
+                    <!--Volunteering Experience-->
 
-                                <li class='skill-text'><i class="devicon-java-plain colored "></i>&nbsp Java</li>
-                                <div id="counter-java" class="enlarge-icon counter-style "> &nbsp 60</div>
-                                <li id="java"></li>
-
-                                <li class='skill-text'> <i class="devicon-python-plain colored"></i>&nbsp Python</li>
-                                <div id="counter-python" class="enlarge-icon counter-style "> &nbsp 50</div>
-                                <li id="python" class="full ">&nbsp</li>
-
-                                <li class='skill-text'> <i class="devicon-html5-plain colored"></i>&nbsp HTML5</li>
-                                <div id="counter-html" class="enlarge-icon counter-style "> &nbsp 75</div>
-                                <li id="html" class="full ">&nbsp</li>
-
-                                <li class='skill-text'><i class="devicon-css3-plain colored "></i>&nbsp CSS3</li>
-                                <div id="counter-css" class="enlarge-icon counter-style "> &nbsp 75</div>
-                                <li id="css"></li>
-
-                                <li class='skill-text'><i class="devicon-javascript-plain colored"></i>&nbsp Javascript</li>
-                                <div id="counter-js" class="enlarge-icon counter-style "> &nbsp 50</div>
-                                <li id="javascript"></li>
-
-                                <li class='skill-text'><i class="devicon-cplusplus-plain-wordmark colored "></i>&nbsp C++ </li>
-                                <div id="counter-cplusplus" class="enlarge-icon counter-style "> &nbsp 30</div>
-                                <li id="cplusplus"></li>
-
-                                <li class='skill-text'><i class="devicon-c-plain-wordmark colored "></i>&nbsp C</li>
-                                <div id="counter-c" class="enlarge-icon counter-style "> &nbsp 20</div>
-                                <li id="c"></li>
-                            </ul>
+                    <div id="volunteer-column" class="col s12 m12 l12">
+                        <h3 id="volunteer-header" class="white-text">Volunteer</h3>
+                        <div id="" class="row experience-block">
+                            <div class="col s4 m4 l4 experience-img">
+                                <div class="job-tile">
+                                    <img class="job-image" src="img/givgro.png">
+                                </div>
+                            </div>
+                            <div class="col s8 m8 l8 experience-text">
+                                <h5 class="job-title white-text">GivGro Foundation - <a class="job-position"> Web Developer </a> </h5>
+                                <h6 class="job-sub-title white-text">March 2016 - June 2016 | Vancouver, British Columbia </h6>
+                                <p class="job-description white-text">
+                                    As a part of the GivGro Foundation, I aided for the design and development of GivGro's entire web user interface using professional design, development practices and standards using HTML5, CSS3, JavaScript, AngularJS, and Node.js
+                                </p>
+                            </div>
                         </div>
-                    </div>
-
-                    <!-- FRAMEWORKS / TOOLS-->
-                    <div class="col s6 m6 l6">
-                        <h4 class="skill-header white-text center wow1 fadeIn"> Frameworks/Tools </h4>
-                        <br>
-                        <div class="container">
-                            <ul>
-                                <li class='skill-text'> <i class="devicon-bootstrap-plain colored"></i>&nbsp Bootstrap</li>
-                                <div id="counter-bootstrap" class="enlarge-icon counter-style ">60</div>
-                                <li id="bootstrap"></li>
-
-                                <li class='skill-text'> <i class="devicon-jquery-plain colored"></i>&nbsp jQuery</li>
-                                <div id="counter-jquery" class="enlarge-icon counter-style "> 50</div>
-                                <li id="jquery"></li>
-
-                                <li class='skill-text'> <i class="devicon-angularjs-plain colored"></i>&nbsp Angular.js</li>
-                                <div id="counter-angular" class="enlarge-icon counter-style "> &nbsp 45</div>
-                                <li id="angular"></li>
-
-                                <li class='skill-text'> <i class="devicon-nodejs-plain colored"></i>&nbsp Node.js</li>
-                                <div id="counter-nodejs" class="enlarge-icon counter-style "> &nbsp 40</div>
-                                <li id="nodejs"></li>
-
-                                <li class='skill-text'> <i class="devicon-mongodb-plain colored"></i>&nbsp MongoDB</li>
-                                <div id="counter-mongodb" class="enlarge-icon counter-style "> &nbsp 25</div>
-                                <li id="mongodb"></li>
-
-                                <li class='skill-text'> <i class="devicon-git-plain colored"></i>&nbsp Git</li>
-                                <div id="counter-git" class="enlarge-icon counter-style "> &nbsp 70</div>
-                                <li id="git"></li>
-
-                                <li class='skill-text'> <i class="devicon-jetbrains-plain colored"></i>&nbsp Jetbrains</li>
-                                <div id="counter-jetbrains" class="enlarge-icon counter-style "> &nbsp 50</div>
-                                <li id='jetbrains'></li>
-                            </ul>
+                        <div id="" class="row experience-block">
+                            <div class="col s4 m4 l4 experience-img">
+                                <div class="job-tile">
+                                    <img class="job-image" src="img/ccc.png">
+                                </div>
+                            </div>
+                            <div class="col s8 m8 l8 experience-text">
+                                <h5 class="job-title white-text">Case Competition Club - <a class="job-position"> Vice President Innovations / Webmaster </a> </h5>
+                                <h6 class="job-sub-title white-text">April 2015 - April 2016 | Vancouver, British Columbia </h6>
+                                <p class="job-description white-text">
+                                    As VP Innovations / Webmaster of the Case Competition Club at the Sauder School of Business, I was responsible for redesigning the Club website as well as ensuring the website's content is delivered effectively. During the 2015/2016 Academic Year, I helped organize and direct more than 6 case competitions with various partner companies such as KPMG and McKinsey & Company. Other responsibilities included: </p>
+                                <ul class="job-description white-text">
+                                    <li> &#8226; Renovating and operating the club website (www.casecompclub.ca) </li>
+                                    <li> &#8226; Updating the website throughout the year for upcoming workshops, competitions, and deadlines </li>
+                                    <li> &#8226; Promoting club events via MailChimp </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="row">
-                    <!--OS's-->
-                    <div class="col s6 m6 l6">
-                        <br>
-                        <h4 class="skill-header white-text center wow1 fadeIn "> Operating Systems </h4>
-                        <br>
-                        <div class="container">
-                            <ul>
-                                <li class='skill-text'> <i class="devicon-windows8-plain colored"></i>&nbsp Windows</li>
-                                <div id="counter-windows" class="enlarge-icon counter-style "> &nbsp 90</div>
-                                <li id="windows"></li>
-
-                                <li class='skill-text'> <i class="devicon-android-plain colored"></i>&nbsp Android</li>
-                                <div id="counter-android" class="enlarge-icon counter-style "> &nbsp 60</div>
-                                <li id="android"></li>
-
-                                <li class='skill-text'><i class="yellow-text devicon-linux-plain enlarge-icon"></i>&nbsp &nbsp&nbsp Linux</li>
-                                <div id="counter-linux" class="enlarge-icon counter-style "> &nbsp 60</div>
-                                <li id="linux"></li>
-
-                                <li class='skill-text'> <i class="devicon-apple-plain enlarge-icon"></i>&nbsp &nbsp&nbsp OSX</li>
-                                <div id="counter-osx" class="enlarge-icon counter-style "> &nbsp 60</div>
-                                <li id="osx"></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col s6 m6 l6">
-                        <!--BUSINESS SKILLS-->
-                        <br>
-                        <h4 class="skill-header white-text center wow1 fadeIn"> Business & Technical Proficiencies </h4>
-                        <br>
-                        <div class="container">
-                            <ul>
-                                <li class='skill-text'> <i class="green-text fa fa-file-excel-o enlarge-icon"></i> &nbsp Management Information Systems</li>
-                                <div id="counter-mis" class="enlarge-icon counter-style "> &nbsp 50</div>
-                                <li id="mis"></li>
-
-                                <li class='skill-text'> <i class=" fa fa-desktop enlarge-icon"></i> &nbsp IT Lifecycle</li>
-                                <div id="counter-it" class="enlarge-icon counter-style "> &nbsp 70</div>
-                                <li id="it-life-cycle"></li>
-
-                                <li class='skill-text'><i class="pink-text fa fa-line-chart enlarge-icon"></i>&nbsp Financial Analysis</li>
-                                <div id="counter-fa" class="enlarge-icon counter-style "> &nbsp 30</div>
-                                <li id="financial-analysis"></li>
-
-                                <li class='skill-text'><i class="brown-text fa fa-industry enlarge-icon"></i>&nbsp&nbsp Project Management</li>
-                                <div id="counter-project-management" class="enlarge-icon counter-style "> &nbsp 40</div>
-                                <li id="project-management"></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <br>
-                <br>
             </div>
 
-            <div class="center-div center">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <h4 class="skill-header white-text center "> Projects </h4>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="row">
+            <!--SECTION 3 - PROJECTS-->
 
-                    <!--Project #1: LetsChill-->
-                    <div class="col s12 m6 l2 wow fadeInUp" data-wow-duration="1.2s">
-
-                        <h5 class="skill-header white-text center btn black darken-2 " style="text-transform: none"> LetsChill  
-                    </h5>
-                        <br>
-                        <br>
-                        <div id="card-1" class="project-card">
-                            <div class="card-img row">
-                                <a href="#modal1" class="modal-trigger">
-                                    <img class="project-img col s12 m12 l12" src="img/coffee-clip-art-pitr_coffee_cup_icon_black_white_line_art_scalable_vector_graphics_svg_scalable_vector_graphics_svg_clip_art_coloring_col.png">
-                                </a>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-                        <a class="default-text modal-trigger waves-effect waves-light btn light-blue darken-2" href="#modal1"> See more <i class="fa fa-code"></i></a>
-                    </div>
-                    <!-- Lets Chill Modal -->
-                    <div id="modal1" class="modal modal-fixed-footer">
-                        <div class="modal-content">
-                            <h4 class="default-text blue-text">LetsChill - HackArizona 2016</h4>
-                            <p class="default-text left-align" style="font-size: 1.4em"> LetsChill takes two locations, and identifies the middle point between the two. From there, it will search within a radius for places to meet such as restaurants, cafes, or even malls. It will list these options while displaying them on the map, and allow the user to filter the venue the user prefers. The list will adjust accordingly, thus providing the user with an easy interface to identify his/her next meetup location.
-                                <br>
-                                <br> <a class="blue-text"> Languages/Frameworks </a>
-                                <br> Front-end: HTML, CSS, JavaScript, jQuery, Google Material Design &nbsp
-                                <br> Back-end: Google AutoComplete API, Google Places API, Google Maps API </p>
-                            <img class="responsive-img" src="https://cloud.githubusercontent.com/assets/7104017/12536194/27a64e98-c25b-11e5-9764-bd8ee6e3aeba.gif">
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                            <a href="http://devpost.com/software/letschill-dhipk3" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 myCFL-->
-                    <div class="col s12 m6 l2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.5s">
-                        <h5 class="skill-header white-text center btn black darken-2 " style="text-transform: none"> myCFL</h5>
-                        <br>
-                        <br>
-                        <div id="card-3" class="project-card">
-                            <div class="card-img row">
-                                <a class=" modal-trigger" href="#modal3">
-                                    <img class=" col s12 m12 l12" src="img/football-helmet-clip-art-LcKbAa7ca.png">
-                                </a>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-                        <a class="default-text modal-trigger waves-effect waves-light btn light-blue darken-2" href="#modal3"> See more <i class="fa fa-code"></i></a>
-                    </div>
-                    <!-- myCFL Modal -->
-                    <div id="modal3" class="modal modal-fixed-footer">
-                        <div class="modal-content">
-                            <h4 class="default-text blue-text">myCFL- SportsHack 2015</h4>
-                            <p class="default-text left-align" style="font-size: 1.4em"> During SportsHack, built a web application that allows fans to immerse themselves into a) the world of their favorite player if they are familiar with the CFL or b) have the choice to be matched with a player based of the commonality of personal information if they are new to the CFL. Used cosine-similarity (Machine Learning) to produce a list of top 5 most similar players to the fan based on given sign-up input data (alma matter, hometown, etc).
-                                <br>
-                                <br> <a class="blue-text"> Languages/Frameworks </a>
-                                <br> Front-end: HTML, CSS, JavaScript, jQuery &nbsp
-                                <br> Back-end: Parse API, Node.js, Python, Flask, Heroku (RESTful API)
-                                <br> Data Analysis: Cosine Similarity
-                                <br> Libraries: Various CFL .csv's and GeoPy</p>
-                            <img class="responsive-img" src="https://cloud.githubusercontent.com/assets/12767206/11579645/871c0d44-99e4-11e5-9860-b63710db33fe.gif">
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                            <a href="https://github.com/therealAJ/SportsHack" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
-                        </div>
-                    </div>
-
-                    <!--Project 3 Mind the Gap -->
-                    <div class="col s12 m6 l2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s">
-                        <h5 class="skill-header white-text center btn black darken-2 " style="text-transform: none"> Mind the Gap 
-                    </h5>
-                        <br>
-                        <br>
-                        <div id="card-2" class="project-card">
-                            <div class="card-img row">
-                                <a class="modal-trigger" href="#modal2">
-                                    <img class="col s12 m12 l12" src="img/BSicon_BAHN.svg">
-                                </a>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-                        <a class="default-text modal-trigger waves-effect waves-light btn light-blue darken-2" href="#modal2"> See more <i class="fa fa-code"></i></a>
-                    </div>
-                    <!-- Mind the Gap Modal -->
-                    <div id="modal2" class="modal modal-fixed-footer">
-                        <div class="modal-content">
-                            <h4 class="default-text blue-text">Mind the Gap - Summer 2015</h4>
-                            <p class="default-text left-align" style="font-size: 1.4em"> As the final project for my Software Construction course (CPSC 210), I extended a partially completed Android application to support route searching, JSON parsing, and GPS mapping of the London Underground, using Junit testing to verify code. The Android application allows you to traverse the London Underground, while having access to real-time arrivals times of trains on each line.
-                                <br>
-                                <br> <a class="blue-text"> Languages/Frameworks: </a>
-                                <br> Java, IntelliJ, GenyMotion, AndroidStudio, Transport for London API </p>
-                            <div class="row">
-                                <img class="col s4 m4 l4" src="img/MtG_A-min.png">
-                                <img class="col s4 m4 l4" src="img/MtG_Map-min.png">
-                                <img class="col s4 m4 l4" src="img/MtG_AB-min.png">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                            <a href="https://github.com/therealAJ/SportsHack" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Project 4 TutorMe -->
-                    <div class="col s12 m6 l2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1.5s">
-                        <h5 class="skill-header white-text center btn black darken-2 " style="text-transform: none">TutorMe</h5>
-                        <br>
-                        <br>
-                        <div id="card-4" class="project-card">
-                            <div class="card-img row">
-                                <a class="modal-trigger" href="#modal4">
-                                    <img class=" col s12 m12 l12" src="img/pencil1.png">
-                                </a>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-                        <a class="default-text modal-trigger waves-effect waves-light btn light-blue darken-2" href="#modal4"> See more <i class="fa fa-code"></i></a>
-                    </div>
-                    <!-- TutorMe Modal -->
-                    <div id="modal4" class="modal modal-fixed-footer">
-                        <div class="modal-content">
-                            <h4 class="default-text blue-text">TutorMe - nwHacks 2016</h4>
-                            <p class="default-text left-align" style="font-size: 1.4em"> Students everywhere always get stumped, and need help in order to overcome struggles with their studies. In many cases, they need the expertise of a tutor in the subject to steer them in the right direction. TutorMe is an Android application which provides quick and easy access to an expert in the subject, with a real tutor in the vicinity of the user. This way, they can meet in a timely manner and the student can understand as quickly as possible.
-                                <br>
-                                <br> <a class="blue-text"> Languages/Frameworks: </a>
-                                <br>Java, Firebase API, GeoFire API, Google Maps API, XML Styling </p>
-                            <div class="row">
-                                <img class="col s4 m4 l4" src="img/home.jpg">
-                                <img class="col s4 m4 l4" src="img/mainMap.jpg">
-                                <img class="col s4 m4 l4" src="img/tutorSignUp.jpg">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                            <a href="http://devpost.com/software/tutorme-hvg8wr" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
-                        </div>
-                    </div>
-
-                    <!--Project 5: GeoPix-->
-                    <div class="col s12 m6 l2 wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="2s">
-                        <h5 class="skill-header white-text center btn black darken-2 " style="text-transform: none">GeoPix</h5>
-                        <br>
-                        <br>
-                        <div id="card-5" class="project-card">
-                            <div class="card-img row">
-                                <a class="modal-trigger" href="#modal5">
-                                    <img class=" col s12 m12 l12" src="img/globe.png">
-                                </a>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-                        <a class="default-text modal-trigger waves-effect waves-light btn light-blue darken-2" href="#modal5"> See more <i class="fa fa-code"></i></a>
-                    </div>
-                    <!-- GeoPix Modal -->
-                    <div id="modal5" class="modal modal-fixed-footer">
-                        <div class="modal-content">
-                            <h4 class="default-text blue-text">GeoPix - LAHacks 2016</h4>
-                            <p class="default-text left-align" style="font-size: 1.4em"> GeoPix is an Android application that allows users to upload information about their travel destination to unique stickers using Near Field Communication (NFC) transfer.
-                                <br>
-                                <br> <a class="blue-text"> Languages/Frameworks: </a>
-                                <br>Front-end: Java, XML
-                                <br>Back-end: Node.js, Express.js, MongoDB
-                            </p>
-                            <div class="row">
-                                <img class="col s4 m4 l4" src="img/geopix-1.png">
-                                <img class="col s4 m4 l4" src="img/geopix-2.png">
-                                <img class="col s4 m4 l4" src="img/geopix-3.png">
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                            <a href="https://github.com/justAdevTV/geo-pix" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
-                        </div>
-                    </div>
-
-                    <!--ePortfolio-->
-                    <div class="col s12 m6 l2 center wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="2.5s">
-                        <h5 class="skill-header white-text center btn black darken-2 " style="text-transform: none">  Portfolio </h5>
-                        <br>
-                        <br>
-                        <div id="card-6" class="project-card">
-                            <div class="card-img row">
-                                <a class="modal-trigger" href="#modal6">
-                                    <img class=" col s12 m12 l12" src="img/business-man.png">
-                                </a>
-                            </div>
-                            <br>
-                        </div>
-                        <br>
-                        <a class="default-text modal-trigger waves-effect waves-light btn light-blue darken-2" href="#modal6"> See more <i class="fa fa-code"></i></a>
-                    </div>
-                    <!--Portfolio Modal-->
-                    <div id="modal6" class="modal modal-fixed-footer">
-                        <div class="modal-content">
-                            <h4 class="default-text blue-text">ePortfolio - Winter 2015</h4>
-                            <p class="default-text left-align" style="font-size: 1.4em"> You're looking at it! This website is meant to provide some brief information about myself, my experiences, projects, and contact information. I will continuously update the website as cool ideas, projects, and experiences arise.
-                                <br>
-                                <br> <a class="blue-text"> Languages/Frameworks: </a>
-                                <br> HTML5, CSS3, JavaScript, jQuery, WebStorm, Adobe Photoshop, Responsive Design </p>
-                            <img class="responsive-img" src="img/mysite-min.png">
-                        </div>
-                        <div class="modal-footer">
-                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-                            <a href="https://github.com/therealAJ/PersonalPortfolio" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
-                        </div>
-                    </div>
-
-                </div>
-                <br>
-                <br>
-                <br>
-                <!--SECOND ROW OF PROJECTS-->
-                <!--            -->
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
-
-
-        <!--EXPERIENCE / SECTION 4 -->
-
-        <div id="section-4" class="light-blue darken-2 scrollspy s12">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4 id="toScroll" class="center default-text scrollspy white-text wow1 fadeIn" data-wow-delay="0.3s"> Experience</h4>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <div class="container">
-                <div class="row">
-                    <ul id="experience-list" class="black-text light-blue lighten-5 z-depth-5" style="letter-spacing: 1px;">
-                        <!--Experience Position 1-->
-                        <li class="wow1 fadeInLeft">
-                            <div class="row">
-                                <div class="col s2 m2 l2 center">
-                                    <img id="giv-gro-img" class="responsive-img center experience-image" src="img/GivGro-min.png">
-                                </div>
-                                <div class="col s10 m10 l10">
-                                    <h5 class="blue-text"> Web Developer </h5>
-                                    <h5 class="experience-subheader"> GivGro Foundation |  Vancouver, Canada <br> <a class="blue-text"> February 2015 - Present </a> </h5>
-                                    <p class="experience-text">As a part of the GivGro Foundation, I will be responsible for the design and development of GivGro’s entire web user interface using professional design, development practices and standards using HTML5, CSS3, JavaScript, AngularJS, and Node.js. Along that I will actively play a part in the creative process in order to customize GivGro’s web application to suit the needs of the organization and to maximize user and administrator functionality. </p>
-                                </div>
-                            </div>
-                        </li>
-                        <br>
-                        <!--Experience Position 2-->
-
-                        <li class="wow1 fadeInLeft">
-                            <div class="row">
-                                <div class="col s2 m2 l2 center">
-                                    <img class="responsive-img center experience-image" src="img/ubc-shield.png">
-                                </div>
-                                <div class="col s10 m10 l10">
-                                    <h5 class="blue-text"> Undergraduate IT Research Assistant</h5>
-                                    <h5 class="experience-subheader"> University of British Columbia | Department of Psychology - IT Team |  Vancouver, Canada <br> <a class="blue-text"> September 2015 - Present </a> </h5>
-
-                                    <p class="experience-text"> Working in a team with 2 Senior IT Support Managers, my main responsibilities entail assisting both department staff and graduate students with technical issues that arise and providing technical support throughout the department. By delivering technical support to the Department of Psychology at UBC, we work to advance various studies in the field; allowing for cutting-edge research. </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!--Experience Position 3-->
-
-                        <li class="wow1 fadeInLeft">
-                            <div class="row">
-                                <div class="col s2 m2 l2 center">
-                                    <img class="responsive-img center experience-image" src="img/ubc-shield.png">
-                                </div>
-                                <div class="col s10 m10 l10">
-                                    <h5 class="blue-text"> Junior IT Help Desk Support Assistant</h5>
-                                    <h5 class="experience-subheader"> University of British Columbia | Department of Psychology - IT Team |  Vancouver, Canada <br> <a class="blue-text"> April 2015 - Present </a> </h5>
-
-                                    <p class="experience-text">Main responsibilities include:
-                                        <br> • Helping staff solving a problem with their software
-                                        <br> • Troubleshooting printers
-                                        <br> • Unboxing new equipment
-                                        <br> • Assisting with the installation of AV and IT equipment
-                                        <br> • Setting up new PC workstations
-                                        <br> • Installing/updating software and operating systems
-                                        <br> • Troubleshooting network connectivity errors
-                                        <br> • Configuring mobile phones to work with the departmental email system
-                                        <br> • Assisting with departmental operational projects </p>
-                                </div>
-                            </div>
-                        </li>
-
-                        <!--Experience Position 4-->
-
-                        <li class="wow1 fadeInLeft">
-                            <div class="row">
-                                <div class="col s2 m2 l2 center">
-                                    <img id="ccc-image" class="responsive-img center experience-image " src="img/CCC_Icon_Twitter_400x400.png">
-                                </div>
-                                <div class="col s10 m10 l10">
-
-                                    <h5 class="blue-text"> Vice President of Innovations / Webmaster</h5>
-                                    <h5 class="experience-subheader">Case Competition Club | University of British Columbia | Sauder School of Business | Vancouver, Canada <br> <a class="blue-text"> April 2015 - Present </a> </h5>
-
-                                    <p class="experience-text">As VP Innovations / Webmaster of the Case Competition Club at the Sauder School of Business, I redesigned the Club website as well as ensured the website's content is delivered effectively. Over the next several months, I plan to integrate both a Case Competition Club app as well as a social blog into the website framework, forming a unique blend of Business and Technology. Other responsibilities include:
-                                        <br> • Renovating and operating the club website
-                                        <br> • Updating the website throughout the year for upcoming workshops, competitions, and deadlines
-                                        <br> • Promoting club events via MailChimp
+            <div id="projects-container" class="">
+                <div id="projects" class="row center">
+                    <div class="col s6 m6 l4">
+                        <a href="#home-safe-modal" class="modal-trigger">
+                            <div id="home-safe" class="project-card">
+                                <img class="project-img" src="img/person-walking.svg">
+                                <div class="text-area">
+                                    <h5>HomeSafe &#187 </h5>
+                                    <p class="description">
+                                        Find your way home after a night out on campus
                                     </p>
                                 </div>
                             </div>
-                        </li>
-
-                        <!--Experience Position 5-->
-
-
-                        <li class="wow1 fadeInLeft">
-                            <div class="row">
-                                <div class="col s2 m2 l2 center">
-                                    <img id="ccc-image" class="responsive-img center experience-image " src="img/Staples.svg-min.png">
-                                </div>
-                                <div class="col s10 m10 l10">
-                                    <h5 class="blue-text"> Sales Associate</h5>
-                                    <h5 class="experience-subheader">Staples Canada | Victoria, Canada <br><a class="blue-text"> April 2012 - August 2014 </a> </h5>
-
-                                    <p class="experience-text">• Recognized by managers based on customer feedback for providing exceptional customer service and product knowledge at all times
-                                        <br> • Maximized sales by leveraging strong selling skills while assisting customers
-                                        <br> • Assisted in maintaining the presentation, signage, and stock levels of merchandise in specific areas
-
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
+                        <a href="#tutor-me-modal" class="modal-trigger">
+                            <div id="tutor-me" class="project-card">
+                                <img class="project-img" src="img/Ei-pencil.svg.png">
+                                <div class="text-area">
+                                    <h5>TutorMe &#187</h5>
+                                    <p class="description">
+                                        Find a tutor for any subject, anytime, anywhere
                                     </p>
                                 </div>
                             </div>
-                        </li>
-                        <!--Experience Position #6-->
-                        <li class="wow1 fadeInLeft">
-                            <div class="row">
-                                <div class="col s2 m2 l2 center">
-                                    <img id="ccc-image" class="responsive-img center experience-image " src="img/TEAMBCpng.png">
-                                </div>
-                                <div class="col s10 m10 l10">
-                                    <h5 class="blue-text"> Member of the U17 British Columbia Basketball Provincial Team</h5>
-                                    <h5 class="experience-subheader">Basketball BC | Vancouver, Canada <br><a class="blue-text"> April 2013 - August 2013 </a> </h5>
-                                    <p class="experience-text">• One of 18 Athletes chosen to represent British Columbia in National and International Competition across North America.
-                                        <br> • Named a Top 20 Senior Basketball Player in BC
-                                        <br> • Recognized by provincial and national level coaches for demonstrating strong leadership skills, exceptional work ethic, and outstanding communication
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
+                        <a href="#geo-pix-modal" class="modal-trigger">
+                            <div id="geo-pix" class="project-card">
+                                <img class="project-img" src="img/earth.png">
+                                <div class="text-area">
+                                    <h5>GeoPix &#187</h5>
+                                    <p class="description">
+                                        An Android geo-caching game for the adventrous ones
                                     </p>
                                 </div>
                             </div>
-                        </li>
-                        <br>
-                    </ul>
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
+                        <a href="#mycfl-modal" class="modal-trigger">
+                            <div id="my-cfl" class="project-card">
+                                <img class="project-img" src="img/football.png">
+                                <div class="text-area">
+                                    <h5>myCFL &#187</h5>
+                                    <p class="description">
+                                        A portal for CFL fans to connect with their favorite player
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
+                        <a href="#mind-the-gap-modal" class="modal-trigger">
+                            <div id="mind-the-gap" class="project-card">
+                                <img class="project-img" src="img/train.svg">
+                                <div class="text-area">
+                                    <h5>Mind The Gap &#187</h5>
+                                    <p class="description">
+                                        An Android app that makes London's transit system simple
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
+                        <a href="#lets-chill-modal" class="modal-trigger">
+                            <div id="lets-chill" class="project-card">
+                                <img class="project-img" src="img/coffee.svg">
+                                <div class="text-area">
+                                    <h5>Lets Chill &#187</h5>
+                                    <p class="description">
+                                        Find fun activities convenient for everyone, anywhere
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
+
+            <!--SECTION 4 - SKILLS-->
+
+            <div id="skills-container">
+                <div id="skills-box" class="row container z-depth-3">
+                    <div id="skills-header" class="default-text">Languages</div>
+                    <div id="ranking-container" class="col s3 m3 l3">
+                        <div id="rank-1-wrap">
+                            <h6 class="rank-text" id="rank-1">Proficient</h6>
+                        </div>
+                        <div id="rank-2-wrap">
+                            <h6 class="rank-text" id="rank-2">Intermediate</h6>
+                        </div>
+                        <div id="rank-3-wrap">
+                            <h6 class="rank-text" id="rank-3">Learning Exposure </h6>
+                        </div>
+                    </div>
+                    <div id="chart-container" class="col s9 m9 l9">
+                        <ul class="chart verticalLine">
+                            <li>
+                                <span style="height:85%" title="Java"></span>
+                            </li>
+                            <li>
+                                <span style="height:65%" title="Python"></span>
+                            </li>
+                            <li>
+                                <span style="height:50%" title="JavaScript"></span>
+                            </li>
+
+                            <li>
+                                <span style="height:40%" title="C#"> </span>
+                            </li>
+                            <li>
+                                <span style="height:25%" title="C++ / C"></span>
+                            </li>
+
+                            <li>
+                                <span style="height:75%" title="HTML / CSS"></span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col s6 m6 l6 skill-column">
+                        <div class="skills-header">Frameworks / Libraries &nbsp <i class="fa fa-2x fa-book skill-icon" aria-hidden="true"></i></div>
+                        <div id="skill-boxie">
+                            <ul class="skills">
+                                <li class="skill-arrow">Node.js</li>
+                                <li class="skill-arrow">AngularJS</li>
+                                <li class="skill-arrow">ReactJS</li>
+                                <li class="skill-arrow">MongoDB</li>
+                                <li class="skill-arrow">jQuery</li>
+                                <li class="skill-arrow">ASP.NET</li>
+                                <li class="skill-arrow">pandas / numpy</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col s6 m6 l6 skill-column">
+                        <div class="skills-header">Tools &nbsp <i class="fa fa-2x fa-cogs skill-icon" aria-hidden="true"></i> </div>
+                        <div id="skill-boxie">
+                            <ul class="skills">
+                                <li class="skill-arrow">Git</li>
+                                <li class="skill-arrow">Bash</li>
+                                <li class="skill-arrow">Vim</li>
+                                <li class="skill-arrow">Android</li>
+                                <li class="skill-arrow">Linux</li>
+                                <li class="skill-arrow">OSX</li>
+                                <li class="skill-arrow">Windows</li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!--SECTION 5 - INTERESTS-->
+
+            <div id="interests-container">
+                <div id="slider-container" class="z-depth-4">
+                    <div class="slider">
+                        <ul class="slides black">
+                            <li>
+                                <img class="responsive-img interest-img" src="img/ball.jpg">
+                                <div class="caption center-align">
+                                    <h3 class="default-text black-text"> Hoops, Hoops, Hoops </h3>
+                                    <h5 class="pink-text default-text">My passion for a lifetime</h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="responsive-img interest-img" src="img/hacking1.jpg">
+                                <div class="caption left-align">
+                                    <h3 class="default-text"> <i class="fa fa-laptop"></i> & <i class="fa fa-cogs"></i> </h3>
+                                    <h5 class="white-text default-text"> I <i class="red-text fa fa-heart"></i> to learn </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img class="responsive-img interest-img" src="img/travel.jpg">
+                                <div class="caption right-align">
+                                    <h3 class="default-text black-text">Travelling <i class="fa fa-globe"></i></h3>
+                                    <h5 class="default-text white-text">California, Italy, Hawaii, Romania, Germany to name a few places... </h5>
+                                </div>
+                            </li>
+                            <li>
+                                <img src="img/hack3.jpg" class="responsive-im interest-img">
+                                <div class="caption center-align">
+                                    <h3 class="default-text pink-text"> I <i class="fa fa-heart"></i> to <i class="fa fa-code"></i></h3>
+                                    <h5 class="light grey-text text-lighten-3 default-text">From hackathons to free-lance development</h5>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--SECTION 6 - CONTACT-->
+
+            <div id="contact-container">
+                <form id="form" class="row container center z-depth-4" action="https://formspree.io/alex.jordache@alumni.ubc.ca" method="POST">
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <input class="input-field-text" id="name" type="text" name="name">
+                            <label for="name" class="login-text">Name</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <input class="input-field-text" id="user_email" type="email" class="validate" name="_replyto">
+                            <label for="email" class="login-text">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12 white-text">
+                            <textarea id="textarea1" class="materialize-textarea" type="text-area" name="Message"></textarea>
+                            <label for="textarea1" class="login-text">Message</label>
+                        </div>
+                    </div>
+                    <button id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" href="#modal1" type="submit" value="Send"> SEND </button>
+                </form>
+            </div>
         </div>
-
-        <!--INTERESTS / SECTION 5 -->
-        <div id="section-5" class="black s12 ">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h4 id="interests" class="default-text white-text center scrollspy">Take a look at what's important to me... </h4>
-            <br>
-            <br>
-            <br>
-            <div id="interest-slider" class="center-div">
-                <div class="slider">
-                    <ul class="slides black">
-                        <li>
-                            <img class="responsive-img interest-img" src="img/ball.jpg">
-                            <div class="caption center-align">
-                                <h3 class="default-text black-text"> Hoops, Hoops, Hoops </h3>
-                                <h5 class="pink-text default-text">My passion for a lifetime</h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="responsive-img" src="img/hacking1.jpg">
-                            <div class="caption left-align">
-                                <h3 class="default-text"> <i class="fa fa-laptop"></i> & <i class="fa fa-cogs"></i> </h3>
-                                <h5 class="white-text default-text"> I <i class="red-text fa fa-heart"></i> to learn </h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img class="responsive-img" src="img/travel.jpg">
-                            <div class="caption right-align">
-                                <h3 class="default-text black-text">Travelling <i class="fa fa-globe"></i></h3>
-                                <h5 class="default-text white-text">California, Italy, Hawaii, Romania, Germany to name a few places... </h5>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="img/hack3.jpg">
-                            <div class="caption center-align">
-                                <h3 class="default-text pink-text"> I <i class="fa fa-heart"></i> to <i class="fa fa-code"></i></h3>
-                                <h5 class="light grey-text text-lighten-3">From hackathons to free-lance development</h5>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-
-        <!-- CONTACT / SECTION 6 -->
-
-        <div id="section-6" class="light-blue darken-2 s12">
-            <br>
-            <br>
-            <br>
-            <h4 class="center default-text  white-text wow1 fadeIn"> Let's get in touch!</h4>
-            <br>
-            <div id="contact-me " class="container light-blue lighten-5 z-depth-5 wow1 fadeIn" data-wow-duration="2s" data-wow-delay="0.5s">
-                <div class="row">
-                    <div class="col l12 m12 s12">
-                        <p class="center default-text " style="font-size: 1.4em">
-                            If you found anything in my website interesting, or just want to get in contact, I'd love to connect with you. </p>
-                        <!--<i class="fa fa-smile-o enlarge-icon"></i>-->
-                    </div>
-                    <br>
-                    <br>
-                </div>
-                <div class="row">
-                    <div class="col s12 m12 l12 center">
-                        <a href="mailto:alex.jordache@alumini.ubc.ca" class="black-text" style="text-decoration: none">
-                            <div id="contact-email" class="contact-container red lighten-4 z-depth-3">
-                                <i class="fa fa-envelope enlarge-icon left pad-icon"></i>
-                                <h5 class="center-align default-text pad-text"> alexander.jordache@gmail.com &nbsp </h5>
-                            </div>
-                        </a>
-                        <br>
-                        <a href="https://github.com/therealAJ" class="black-text" style="text-decoration: none">
-                            <div id="contact-git" class="contact-container orange lighten-3 z-depth-3">
-                                <i class="fa fa-github-square enlarge-icon left pad-icon"></i>
-                                <h5 class="center-align pad-text default-text"> https://github.com/therealAJ &nbsp</h5>
-                            </div>
-                        </a>
-                        <br>
-                        <a href="https://ca.linkedin.com/in/ajordache" class="black-text" style="text-decoration: none">
-                            <div id="contact-linkedin" class="contact-container blue lighten-3 z-depth-3">
-                                <i class="fa fa-linkedin enlarge-icon left pad-icon"></i>
-                                <h5 class="right default-text"> https://ca.linkedin.com/in/ajordache &nbsp</h5>
-                            </div>
-                        </a>
-                        <br>
-                        <a href="https://twitter.com/alexjordache3" class="black-text" style="text-decoration: none">
-                            <div id="contact-twitter" class="contact-container green lighten-3 z-depth-3">
-                                <i class="fa fa-twitter enlarge-icon left pad-icon"></i>
-                                <h5 class="center-align pad-text default-text">https://twitter.com/alexjordache3 &nbsp</h5>
-                            </div>
-                        </a>
-                        <br>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-        </div>
-
-        <!-- FOOTER -->
-
-        <footer id="contact-scroll" class="page-footer black scrollspy s12">
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 m6 s6">
-                        <h5 class="white-text default-text">Thanks for visiting :) </h5>
-                    </div>
-                    <div class="col l6 m6 s6">
-                        <h5> <a href="#section-1" class="white-text default-text right smoothScroll"> Back to top </a> </h5>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-copyright">
-                <div class="container white-text default-text">
-                    © 2016 Alex Jordache
-                    <a class="grey-text text-lighten-4 right" href="https://vancouver.ca">Made with <i class="pulse2 red-text fa fa-heart"></i> in Vancouver  </a>
-                </div>
-            </div>
-        </footer>
 
     </div>
 
 
+    <!--CONTACT MODAL-->
+
+    <div id="modal1" class="modal modal-fixed-footer thank-you-modal">
+        <div class="modal-content">
+            <h4>Thank you!</h4>
+            <p>Your email has been sent. I'll get back to you shortly.</p>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+        </div>
+    </div>
+
+
+    <!--PROJECT MODALS-->
+
+    <!-- Lets Chill Modal -->
+    <div id="lets-chill-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">LetsChill - HackArizona 2016</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> LetsChill takes two locations, and identifies the middle point between the two. From there, it will search within a radius for places to meet such as restaurants, cafes, or even malls. It will list these options while displaying them on the map, and allow the user to filter the venue the user prefers. The list will adjust accordingly, thus providing the user with an easy interface to identify his/her next meetup location.
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks </a>
+                <br> Front-end: HTML, CSS, JavaScript, jQuery, Google Material Design &nbsp
+                <br> Back-end: Google AutoComplete API, Google Places API, Google Maps API </p>
+
+
+            <img class="responsive-img" src="https://cloud.githubusercontent.com/assets/7104017/12536194/27a64e98-c25b-11e5-9764-bd8ee6e3aeba.gif">
+
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="http://devpost.com/software/letschill-dhipk3" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+
+        </div>
+    </div>
+
+    <!-- Mind the Gap Modal -->
+    <div id="mind-the-gap-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">Mind the Gap - Summer 2015</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> As the final project for my Software Construction course (CPSC 210), I extended a partially completed Android application to support route searching, JSON parsing, and GPS mapping of the London Underground, using Junit testing to verify code. The Android application allows you to traverse the London Underground, while having access to real-time arrivals times of trains on each line.
+
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks: </a>
+                <br> Java, IntelliJ, GenyMotion, AndroidStudio, Transport for London API </p>
+
+            <div class="row">
+
+                <img class="col s4 m4 l4" src="img/MtG_A.png">
+                <img class="col s4 m4 l4" src="img/MtG_Map.png">
+                <img class="col s4 m4 l4" src="img/MtG_AB.png">
+
+            </div>
+
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="https://github.com/therealAJ/SportsHack" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+
+        </div>
+    </div>
+
+    <!-- myCFL Modal -->
+    <div id="mycfl-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">myCFL- SportsHack 2015</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> During SportsHack, built a web application that allows fans to immerse themselves into a) the world of their favorite player if they are familiar with the CFL or b) have the choice to be matched with a player based of the commonality of personal information if they are new to the CFL. Used cosine-similarity (Machine Learning) to produce a list of top 5 most similar players to the fan based on given sign-up input data (alma matter, hometown, etc).
+
+
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks </a>
+                <br> Front-end: HTML, CSS, JavaScript, jQuery &nbsp
+                <br> Back-end: Parse API, Node.js, Python, Flask, Heroku (RESTful API)
+                <br> Data Analysis: Cosine Similarity
+                <br> Libraries: Various CFL .csv's and GeoPy</p>
+
+            <img class="responsive-img" src="https://cloud.githubusercontent.com/assets/12767206/11579645/871c0d44-99e4-11e5-9860-b63710db33fe.gif">
+
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="https://github.com/therealAJ/SportsHack" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+
+        </div>
+    </div>
+
+    <!-- TutorMe Modal -->
+    <div id="tutor-me-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">TutorMe - nwHacks 2016</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> Students everywhere always get stumped, and need help in order to overcome struggles with their studies. In many cases, they need the expertise of a tutor in the subject to steer them in the right direction. TutorMe is an Android application which provides quick and easy access to an expert in the subject, with a real tutor in the vicinity of the user. This way, they can meet in a timely manner and the student can understand as quickly as possible.
+
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks: </a>
+                <br>Java, Firebase API, GeoFire API, Google Maps API, XML Styling </p>
+
+            <div class="row">
+
+                <img class="col s4 m4 l4" src="img/home.jpg">
+                <img class="col s4 m4 l4" src="img/mainMap.jpg">
+                <img class="col s4 m4 l4" src="img/tutorSignUp.jpg">
+            </div>
+
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="http://devpost.com/software/tutorme-hvg8wr" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+
+        </div>
+    </div>
+
+    <!-- GeoPix Modal -->
+    <div id="geo-pix-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">GeoPix - LAHacks 2016</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> GeoPix is an Android application that allows users to upload information about their travel destination to unique stickers using Near Field Communication (NFC) transfer.
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks: </a>
+                <br>Front-end: Java, XML
+                <br>Back-end: Node.js, Express.js, MongoDB
+            </p>
+            <div class="row">
+                <img class="col s4 m4 l4" src="img/geopix-1.png">
+                <img class="col s4 m4 l4" src="img/geopix-2.png">
+                <img class="col s4 m4 l4" src="img/geopix-3.png">
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+            <a href="https://github.com/justAdevTV/geo-pix" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+        </div>
+    </div>
+
 </body>
-
-<!--GOOGLE ANALYTICS-->
-
-<script>
-    (function (i, s, o, g, r, a, m) {
-        i['GoogleAnalyticsObject'] = r;
-        i[r] = i[r] || function () {
-            (i[r].q = i[r].q || []).push(arguments)
-        }, i[r].l = 1 * new Date();
-        a = s.createElement(o),
-            m = s.getElementsByTagName(o)[0];
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', 'UA-71771112-1', 'auto');
-    ga('send', 'pageview');
-</script>
 
 </html>
