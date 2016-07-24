@@ -654,6 +654,52 @@ body {
 
 /*EXTRAS*/
 
+
+/*page loader*/
+
+#loader-container {
+    min-height: 100%;
+    background: white;
+}
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1001 !important;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    border-left: 16px solid #dbe9ee;
+    border-right: 16px solid #4a6fa5;
+    border-bottom: 16px solid #c0d6df;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2.5s linear infinite;
+    animation: spin 2.5s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 .stars {
     background: #000 url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/stars_aydndz.png) repeat top center;
     z-index: 0;
