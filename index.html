@@ -402,26 +402,30 @@
             <!--SECTION 6 - CONTACT-->
 
             <div id="contact-container">
+
+                <div id="contact-form-header" class="white-text default-text"> If you want to know more, have any questions,
+                    <br> or just want to say hi, shoot me a message</div>
+
                 <form id="form" class="row container center z-depth-4" action="https://formspree.io/alex.jordache@alumni.ubc.ca" method="POST">
                     <div id="name-field" class="row">
                         <div class="input-field col s12 white-text">
-                            <input class="input-field-text" id="name" type="text" name="name">
+                            <input class="input-field-text" required id="name" type="text" name="name">
                             <label for="name" class="login-text">Name</label>
                         </div>
                     </div>
                     <div id="email-field" class="row">
                         <div class="input-field col s12 white-text">
-                            <input class="input-field-text" id="user_email" type="email" class="validate" name="_replyto">
+                            <input class="input-field-text" required id="user_email" type="email" class="validate" name="_replyto">
                             <label for="email" class="login-text">Email</label>
                         </div>
                     </div>
                     <div class="row">
                         <div class="input-field col s12 white-text">
-                            <textarea id="textarea1" class="materialize-textarea" type="text-area" name="Message"></textarea>
+                            <textarea id="textarea1" class="materialize-textarea" type="text-area" required name="Message"></textarea>
                             <label for="textarea1" class="login-text">Message</label>
                         </div>
                     </div>
-                    <button id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center" type="submit" value="Send"> SEND </button>
+                    <button id="send_email" class="waves-effect waves-light btn-large black homepage-buttons button-text center modal-trigger" type="submit" value="Send" href="#modal1"> SEND </button>
                 </form>
             </div>
         </div>

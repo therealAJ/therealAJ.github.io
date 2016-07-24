@@ -527,6 +527,14 @@ body {
     width: 100%;
     background-color: #D16666;
     z-index: 100 !important;
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#contact-form-header {
+    font-size: 28px;
+    position: relative;
 }
 
 #form {
@@ -537,7 +545,10 @@ body {
     background-color: #2C4251;
     position: relative;
     border-radius: 5px;
-    top: 20%;
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
 .button-text {
@@ -901,5 +912,8 @@ body {
     .skills,
     .skill-column {
         height: 55%;
+    }
+    #contact-form-header {
+        top: 8%;
     }
 }
