@@ -1,7 +1,7 @@
 var myVar;
 
 function pageLoader() {
-    myVar = setTimeout(showPage, 4000);
+    myVar = setTimeout(showPage, 2600);
 }
 
 function showPage() {

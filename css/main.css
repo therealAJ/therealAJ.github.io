@@ -659,7 +659,11 @@ body {
 
 #loader-container {
     min-height: 100%;
+    height: 100%;
+    width: 100%;
     background: white;
+    position: absolute;
+    z-index: 1001;
 }
 
 #loader {
