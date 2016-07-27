@@ -347,6 +347,11 @@ body {
     background-color: #3EC300;
 }
 
+#geo-pic {
+    height: 160px;
+    width: 160px;
+}
+
 #my-cfl {
     background-color: #8B1E3F;
 }
