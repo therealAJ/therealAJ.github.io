@@ -364,6 +364,11 @@ body {
     background-color: #DDA15E;
 }
 
+#map-it {
+    background-color: #71A9F7;
+    /*F05D5E;*/
+}
+
 #skills-container {
     position: relative;
     height: 100%;
