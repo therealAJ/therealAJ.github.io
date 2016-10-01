@@ -198,7 +198,8 @@ body {
 
 #work-column {
     padding-top: 40px;
-    padding-left: 80px;
+    padding-left: 30px;
+    margin-bottom: -50px;
 }
 
 #volunteer-column {
