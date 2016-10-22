@@ -209,6 +209,19 @@
             <div id="projects-container" class="">
                 <div id="projects" class="row center">
                     <div class="col s6 m6 l4">
+                        <a href="#buckets-modal" class="modal-trigger">
+                            <div id="buckets" class="project-card">
+                                <img class="project-img" src="img/proj-icons/basketball.svg">
+                                <div class="text-area">
+                                    <h5>Buckets++ &#187 </h5>
+                                    <p class="description">
+                                        Predict a NBA player's chance of making a shot
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
                         <a href="#home-safe-modal" class="modal-trigger">
                             <div id="home-safe" class="project-card">
                                 <img class="project-img" src="img/proj-icons/home.svg">
@@ -467,11 +480,33 @@
 
     <!--PROJECT MODALS-->
 
+    <!-- Buckets Modal-->
+    <div id="buckets-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">Buckets++ (QuackCon 2016)</h4>
+            <h6 class="default-text red-text" style="font-style:italic">Winner of Best Athletic Engagement</h6>
+            <p class="default-text left-align" style="font-size: 1.4em"> Buckets++ is a hybrid web application that uses a machine learning model (Gradient Boosting) to analyze CSVs of NBA players' shots and calculate the probability of the shot going in based on variables such as time remaining in game and opposition.
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks </a>
+                <br> Front-end: HTML5, CSS3, JavaScript &nbsp
+                <br> Back-end: Python, Flask, Node.js
+                <br> Libraries: scikit learn, pandas, seaborn, matplotlib
+            </p>
+            <img class="" id="buckets-gif" src="https://raw.github.com/therealAJ/buckets-plus-plus/master/demo.gif">
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="https://github.com/therealAJ/buckets-plus-plus" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+
+        </div>
+    </div>
+
     <!--HomeSafe Modal -->
     <div id="home-safe-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
             <h4 class="default-text blue-text">HomeSafe</h4>
-
             <p class="default-text left-align" style="font-size: 1.4em"> Making sure you get home safe is a must after a night out - especially when you are alone late at night on campus. HomeSafe is a MEAN-stack web application that uses Google Maps and Directions API to route your location to the closest (or preferred) SafeWalk station and provides walking directions to that location.
                 <br>
                 <br> <a class="blue-text"> Languages/Frameworks </a>
@@ -479,11 +514,7 @@
                 <br> Back-end: Node.js, MongoDB, Express.js
                 <br> Libraries: Google Maps API, Google Directions API
             </p>
-
-
             <img class="responsive-img" src="https://raw.github.com/therealAJ/HomeSafe/master/Animation.gif">
-
-
         </div>
         <div class="modal-footer">
 
@@ -499,7 +530,7 @@
     <!-- Lets Chill Modal -->
     <div id="lets-chill-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4 class="default-text blue-text">LetsChill - HackArizona 2016</h4>
+            <h4 class="default-text blue-text">LetsChill (HackArizona 2016)</h4>
             <p class="default-text left-align" style="font-size: 1.4em"> LetsChill takes two locations, and identifies the middle point between the two. From there, it will search within a radius for places to meet such as restaurants, cafes, or even malls. It will list these options while displaying them on the map, and allow the user to filter the venue the user prefers. The list will adjust accordingly, thus providing the user with an easy interface to identify his/her next meetup location.
                 <br>
                 <br> <a class="blue-text"> Languages/Frameworks </a>
@@ -522,7 +553,7 @@
     <!-- Mind the Gap Modal -->
     <div id="mind-the-gap-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4 class="default-text blue-text">Mind the Gap - Summer 2015</h4>
+            <h4 class="default-text blue-text">Mind the Gap (Academic)</h4>
             <p class="default-text left-align" style="font-size: 1.4em"> As the final project for my Software Construction course (CPSC 210), I extended a partially completed Android application to support route searching, JSON parsing, and GPS mapping of the London Underground, using Junit testing to verify code. The Android application allows you to traverse the London Underground, while having access to real-time arrivals times of trains on each line.
 
                 <br>
@@ -550,7 +581,7 @@
     <!-- myCFL Modal -->
     <div id="mycfl-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4 class="default-text blue-text">myCFL- SportsHack 2015</h4>
+            <h4 class="default-text blue-text">myCFL (SportsHack 2015)</h4>
             <p class="default-text left-align" style="font-size: 1.4em"> During SportsHack, built a web application that allows fans to immerse themselves into a) the world of their favorite player if they are familiar with the CFL or b) have the choice to be matched with a player based of the commonality of personal information if they are new to the CFL. Used cosine-similarity (Machine Learning) to produce a list of top 5 most similar players to the fan based on given sign-up input data (alma matter, hometown, etc).
 
 
@@ -576,7 +607,7 @@
     <!-- TutorMe Modal -->
     <div id="tutor-me-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4 class="default-text blue-text">TutorMe - nwHacks 2016</h4>
+            <h4 class="default-text blue-text">TutorMe (nwHacks 2016)</h4>
             <p class="default-text left-align" style="font-size: 1.4em"> Students everywhere always get stumped, and need help in order to overcome struggles with their studies. In many cases, they need the expertise of a tutor in the subject to steer them in the right direction. TutorMe is an Android application which provides quick and easy access to an expert in the subject, with a real tutor in the vicinity of the user. This way, they can meet in a timely manner and the student can understand as quickly as possible.
 
                 <br>
@@ -603,7 +634,7 @@
     <!-- GeoPix Modal -->
     <div id="geo-pix-modal" class="modal modal-fixed-footer">
         <div class="modal-content">
-            <h4 class="default-text blue-text">GeoPix - LAHacks 2016</h4>
+            <h4 class="default-text blue-text">GeoPix (LAHacks 2016)</h4>
             <p class="default-text left-align" style="font-size: 1.4em"> GeoPix is an Android application that allows users to upload information about their travel destination to unique stickers using Near Field Communication (NFC) transfer.
                 <br>
                 <br> <a class="blue-text"> Languages/Frameworks: </a>

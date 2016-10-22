@@ -336,6 +336,17 @@ body {
     background: rgba(0, 0, 0, 0.2);
 }
 
+#buckets {
+    background-color: #56A3A6;
+}
+
+#buckets-gif {
+    height: 550px;
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+
 #home-safe {
     background-color: #502F4C;
 }
