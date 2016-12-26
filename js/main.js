@@ -14,6 +14,17 @@ function showPage() {
 // Initialize collapse button
 $(".button-collapse").sideNav();
 
+$(function() {
+    $("img.lazy").lazyload({
+        event : "lateload"
+    });
+});
+
+$(window).bind("load", function() {
+    var timeout = setTimeout(function() {
+        $("img.lazy").trigger("lateload")
+    }, 500);
+});
 
 //
 //MODAL
