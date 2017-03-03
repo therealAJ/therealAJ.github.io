@@ -347,8 +347,17 @@ body {
     margin: auto;
 }
 
+#mirror-gif {
+    margin: auto;
+    display: block;
+}
+
 #home-safe {
     background-color: #502F4C;
+}
+
+#smart-mirror {
+    background-color: #91A6FF;
 }
 
 #tutor-me {
