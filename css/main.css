@@ -352,6 +352,10 @@ body {
     display: block;
 }
 
+#torch {
+    background-color: #D58936;
+}
+
 #home-safe {
     background-color: #502F4C;
 }
