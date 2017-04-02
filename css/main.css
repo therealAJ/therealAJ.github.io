@@ -265,6 +265,15 @@ body {
     transform: translateY(-50%);
 }
 
+#rbc-tile {
+    background-color: #17468F;
+}
+
+#rbc-logo {
+    height: 150px;
+    width: 140px;
+}
+
 #ubc-tile {
     height: 170px;
     width: 150px;
