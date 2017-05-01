@@ -383,6 +383,15 @@ body {
     background-color: #3EC300;
 }
 
+#bulk-pdf {
+    background-color: #D95D39
+}
+
+#react-bootstrap {
+    background-color: #212227
+}
+
+
 #geo-pic {
     height: 160px;
     width: 160px;

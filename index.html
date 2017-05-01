@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <link rel="icon" href="/img/alien.png">
     <!--Import Google Icon Font-->
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Compiled and minified CSS -->
@@ -85,9 +86,9 @@
                 <br>
                 <a id="sub-headline" class="white-text"> Tech aficionado. Creative coder. Stargazer. </a>
                 <br>
-                <a class="white-text landing-page-icon" href="https://www.github.com/therealAJ"><i class="fa fa-github" aria-hidden="true">&nbsp</i></a>
-                <a href="https://www.linkedin.com/in/ajordache" class="white-text landing-page-icon"><i class="fa fa-linkedin" aria-hidden="true">&nbsp</i> </a>
-                <a href="https://plus.google.com/115318613127439897355" class="white-text landing-page-icon">
+                <a class="white-text landing-page-icon" href="https://www.github.com/therealAJ" target="_blank"><i class="fa fa-github" aria-hidden="true">&nbsp</i></a>
+                <a href="https://www.linkedin.com/in/ajordache" class="white-text landing-page-icon" target="_blank"><i class="fa fa-linkedin" aria-hidden="true">&nbsp</i> </a>
+                <a href="https://plus.google.com/115318613127439897355" class="white-text landing-page-icon" target="_blank">
                     <i class="fa fa-google-plus" aria-hidden="true">&nbsp</i> </a>
                 <a class="white-text landing-page-icon">
                     <i class="fa fa-envelope">&nbsp</i> </a>
@@ -130,11 +131,9 @@
                             </div>
                             <div class="col s8 m8 l8 experience-text">
                                 <h5 class="job-title white-text">Royal Bank of Canada - <a class="job-position"> Software Developer Intern </a> </h5>
-                                <h6 class="job-sub-title white-text">Incoming May 2017 | Toronto, Ontario </h6>
-                                <!--
-                                <p class="job-description white-text"> Working on developing an industry leading SaaS product suite in an agile environment using C#, ASP.NET, JavaScript Frameworks (AngularJS, React.js), SQL, OracleDB, and NUnit for testing.
+                                <h6 class="job-sub-title white-text">May 2017 - Present  | Toronto, Ontario </h6>     
+                                <p class="job-description white-text"> Developing the Mobile Payments area of the Android application
                                 </p>
--->
                             </div>
                         </div>
                         <div id="" class="row experience-block">
@@ -145,8 +144,8 @@
                             </div>
                             <div class="col s8 m8 l8 experience-text">
                                 <h5 class="job-title white-text">Vision Critical - <a class="job-position"> Software Engineering Intern </a> </h5>
-                                <h6 class="job-sub-title white-text">September 2016 - Present | Vancouver, British Columbia </h6>
-                                <p class="job-description white-text"> Working on developing an industry leading SaaS product suite in an agile environment using C#, ASP.NET, JavaScript Frameworks (AngularJS, React.js), SQL, OracleDB, and NUnit for testing.
+                                <h6 class="job-sub-title white-text">September 2016 - April 2017 | Vancouver, British Columbia </h6>
+                                <p class="job-description white-text"> Worked on developing the member portal of an industry leading SaaS product suite in an agile environment using C#, React.js, ASP.NET, along with Enzyme, Jasmine, and NUnit for testing.
                                 </p>
                             </div>
                         </div>
@@ -244,7 +243,7 @@
                                 <div class="text-area">
                                     <h5>Torch &#187 </h5>
                                     <p class="description">
-                                        A voice-controller assistant for the visually impaired
+                                        A voice-controlled assistant for the visually impaired
                                     </p>
                                 </div>
                             </div>
@@ -271,6 +270,32 @@
                                     <h5>Smart Mirror &#187 </h5>
                                     <p class="description">
                                         An all-in-one stop for browsing videos and checking stocks
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s6 m6 l4">
+                        <a href="#react-bootstrap-modal" class="modal-trigger">
+                            <div id="react-bootstrap" class="project-card">
+                                <img class="project-img" src="img/proj-icons/crane.svg">
+                                <div class="text-area">
+                                    <h5>React Bootstrap &#187</h5>
+                                    <p class="description">
+                                        Minimal React bootstrapper w/ hot-reloading
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                     <div class="col s6 m6 l4">
+                        <a href="#bulk-pdf-modal" class="modal-trigger">
+                            <div id="bulk-pdf" class="project-card">
+                                <img class="project-img" src="img/proj-icons/bull.svg">
+                                <div class="text-area">
+                                    <h5>Bulk PDF &#187</h5>
+                                    <p class="description">
+                                        Downloads all PDFs on a webpage (for lazy people)
                                     </p>
                                 </div>
                             </div>
@@ -527,6 +552,46 @@
 
 
     <!--PROJECT MODALS-->
+    
+    <!-- Bulk PDF Modal-->
+    <div id="bulk-pdf-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">Bulk PDF</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> 
+                Bulk PDF lets you download hosted and local PDFs quickly.
+                Check out the Github repo for a demo and documentation.
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks </a>
+                <br> Back-end: Python
+            </p>
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="https://github.com/therealAJ/bulk-pdf" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
+        </div>
+    </div>
+    
+    <!-- React Bootstrapper Modal-->
+    <div id="react-bootstrap-modal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4 class="default-text blue-text">React Bootstrap</h4>
+            <p class="default-text left-align" style="font-size: 1.4em"> React Bootstrap builds a robust React workspace quick and easy, letting you focus on development rather than set-up. Check out the Github repo for a demo.
+                <br>
+                <br> <a class="blue-text"> Languages/Frameworks </a>
+                <br> Front-end: ES6 &nbsp
+                <br> Back-end: Webpack, Babel
+                <br> Libraries: React.js
+            </p>
+        </div>
+        <div class="modal-footer">
+
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
+
+            <a href="https://github.com/therealAJ/react-bootstrap" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
+        </div>
+    </div>
 
     <!-- Smart Mirror Modal-->
     <div id="mirror-modal" class="modal modal-fixed-footer">
@@ -545,7 +610,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://github.com/therealAJ/smart-mirror" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/therealAJ/smart-mirror" class="modal-action modal-close waves-effect waves-green btn-flat " target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -570,7 +635,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://devpost.com/software/tellmemore" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://devpost.com/software/tellmemore" class="modal-action modal-close waves-effect waves-green btn-flat " target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -593,7 +658,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://github.com/therealAJ/buckets-plus-plus" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/therealAJ/buckets-plus-plus" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -614,7 +679,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://github.com/therealAJ/torch" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/therealAJ/torch" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -636,7 +701,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://github.com/therealAJ/HomeSafe" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/therealAJ/HomeSafe" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -661,7 +726,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="http://devpost.com/software/letschill-dhipk3" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="http://devpost.com/software/letschill-dhipk3" class="modal-action modal-close waves-effect waves-green btn-flat " target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -713,7 +778,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://github.com/therealAJ/SportsHack" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/therealAJ/SportsHack" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -740,7 +805,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="http://devpost.com/software/tutorme-hvg8wr" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="http://devpost.com/software/tutorme-hvg8wr" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
@@ -763,7 +828,7 @@
         </div>
         <div class="modal-footer">
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
-            <a href="https://github.com/justAdevTV/geo-pix" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/justAdevTV/geo-pix" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
         </div>
     </div>
 
@@ -786,7 +851,7 @@
 
             <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
 
-            <a href="https://github.com/therealAJ/MapIt" class="modal-action modal-close waves-effect waves-green btn-flat ">View on &nbsp  <i class="fa fa-github-square"></i></a>
+            <a href="https://github.com/therealAJ/MapIt" class="modal-action modal-close waves-effect waves-green btn-flat" target="_blank">View on &nbsp  <i class="fa fa-github-square"></i></a>
 
         </div>
     </div>
