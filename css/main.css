@@ -779,7 +779,7 @@ body {
 }
 
 .stars {
-    background: #000 url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/stars_aydndz.png) repeat top center;
+    background: #000 url(https://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/stars_aydndz.png) repeat top center;
     z-index: 0;
 }
 
@@ -787,7 +787,7 @@ body {
 /*backup-url: http://www.script-tutorials.com/demos/360/images/twinkling.png */
 
 .twinkling {
-    background: transparent url(http://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/twinkling_yvha6w.png) repeat top center;
+    background: transparent url(https://res.cloudinary.com/dz9yrk0yr/image/upload/v1451159541/twinkling_yvha6w.png) repeat top center;
     z-index: 0;
     -moz-animation: move-twink-back 200s linear infinite;
     -ms-animation: move-twink-back 200s linear infinite;
