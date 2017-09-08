@@ -208,6 +208,11 @@ body {
     padding-left: 30px;
 }
 
+#experience-header {
+    padding-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+
 #volunteer-header {
     padding-bottom: 50px;
     font-family: 'Nunito', sans-serif;
