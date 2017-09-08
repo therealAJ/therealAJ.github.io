@@ -209,8 +209,8 @@ body {
 }
 
 #experience-header {
-    padding-bottom: 50px;
-    font-family: 'Nunito', sans-serif;
+    padding-bottom: 50px !important;
+    font-family: 'Nunito', sans-serif !important;
 }
 
 #volunteer-header {
