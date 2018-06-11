@@ -144,7 +144,7 @@ body {
 }
 
 #about-me {
-    height: 100%;
+    height: 100% !important;
     padding: 10px 10px 10px;
     text-align: left;
     position: relative;
