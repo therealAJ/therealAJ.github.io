@@ -144,7 +144,7 @@ body {
 }
 
 #about-me {
-    height: 80%;
+    height: 100%;
     padding: 10px 10px 10px;
     text-align: left;
     position: relative;
@@ -169,12 +169,10 @@ body {
 
 #summary-pic {
     position: relative;
-    top: 38%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 480px;
     width: 340px;
-    margin-top: 20px;
     margin-bottom: 20px;
     border-radius: 5px;
 }
