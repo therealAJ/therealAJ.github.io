@@ -26,6 +26,7 @@ body {
 #side-nav {
     height: 60%;
     width: 100%;
+    cursor: default;
 }
 
 #side-nav li {
